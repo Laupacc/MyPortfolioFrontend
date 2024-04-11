@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -12,24 +10,24 @@ import {
 import Loader from "react-loaders";
 // import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import './index.scss'
+import styles from "../styles/About.module.css";
 
-const Home = () => {
+function About() {
   const aboutArray = "About Me".split("");
 
-  const [letterClass, setLetterClass] = useState("text-animate");
+  const [letterClass, setLetterClass] = useState(styles.textAnimate);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass(styles.textAnimateHover);
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
-      <div className="container about-page">
-        <div className="text-zone">
+      <div className={`${styles.container} ${styles.aboutPage}`}>
+        <div className={styles.textZone}>
           <h1>
             {/* <AnimatedLetters
               letterClass={letterClass}
@@ -56,24 +54,24 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
+        <div className={styles.stageCubeCont}>
+          <div className={styles.cubeSpinner}>
+            <div className={styles.face1}>
               <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
             </div>
-            <div className="face2">
+            <div className={styles.face2}>
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
-            <div className="face3">
+            <div className={styles.face3}>
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
             </div>
-            <div className="face4">
+            <div className={styles.face4}>
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
-            <div className="face5">
+            <div className={styles.face5}>
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
-            <div className="face6">
+            <div className={styles.face6}>
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
@@ -82,6 +80,6 @@ const Home = () => {
       <Loader type="pacman" />
     </>
   );
-};
+}
 
-export default Home;
+export default About;

@@ -1,24 +1,100 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 4rem 0;
+.stageCubeCont {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  -moz-perspective: 1000px;
 }
 
-.title {
-  line-height: 1.15;
-  font-size: 4rem;
+.cubeSpinner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: spincube 12s ease-in-out infinite;
+  -moz-transform-style: preserve-3d;
+  -moz-animation: spincube 12s infinite;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.cubeSpinner div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  border: none;
+  line-height: 200px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+@keyframes spincube {
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(90deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+@-moz-keyframes spincube {
+  16% {
+    -moz-transform: rotateY(-90deg);
+  }
+  33% {
+    -moz-transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    -moz-transform: rotateY(180deg) rotateZ(90deg);
+  }
+  66% {
+    -moz-transform: rotateY(90deg) rotateX(90deg);
+  }
+  83% {
+    -moz-transform: rotateX(90deg);
+  }
+}
+
+.face1,
+.face2,
+.face3,
+.face4,
+.face5,
+.face6 {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.cubeSpinner .face1 {
+  transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
+}
+.cubeSpinner .face2 {
+  transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
+}
+.cubeSpinner .face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.cubeSpinner .face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.cubeSpinner .face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.cubeSpinner .face6 {
+  transform: rotateX(-90deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) translateZ(100px);
 }
