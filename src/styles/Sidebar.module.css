@@ -1,0 +1,31 @@
+/* .main {
+  background: #d6caca;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+} */
+
+/* nav {
+  transition: transition;
+} */
+
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+/* li {
+  transition: transition;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: transition;
+  }
+} */
+
+.link:hover {
+  color: unset;
+}

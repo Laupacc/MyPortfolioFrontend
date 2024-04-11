@@ -5,7 +5,7 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-  faPython,
+  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import Loader from "react-loaders";
 // import AnimatedLetters from '../AnimatedLetters'
@@ -57,7 +57,7 @@ function About() {
         <div className={styles.stageCubeCont}>
           <div className={styles.cubeSpinner}>
             <div className={styles.face1}>
-              <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
+              <FontAwesomeIcon icon={faNode} color="#4B8BBE" />
             </div>
             <div className={styles.face2}>
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
