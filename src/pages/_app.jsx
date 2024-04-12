@@ -1,15 +1,16 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
+import About from "../components/About";
 
 function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Next.js App</title>
+        <title>My Portfolio</title>
       </Head>
-      <Sidebar />
       <Component {...pageProps} />
+      <Sidebar />
     </>
   );
 }

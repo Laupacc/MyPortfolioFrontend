@@ -7,51 +7,15 @@ import {
   faReact,
   faNode,
 } from "@fortawesome/free-brands-svg-icons";
-import Loader from "react-loaders";
-// import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/About.module.css";
 
 function About() {
-  const aboutArray = "About Me".split("");
-
-  const [letterClass, setLetterClass] = useState(styles.textAnimate);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLetterClass(styles.textAnimateHover);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
       <div className={`${styles.container} ${styles.aboutPage}`}>
         <div className={styles.textZone}>
-          <h1>
-            {/* <AnimatedLetters
-              letterClass={letterClass}
-              strArray={aboutArray}
-              idx={15}
-            /> */}
-          </h1>
-          <p>
-            I'm a Computer Science Undergrad student at Indian Institute of
-            Information Technology and Management, Gwalior.
-          </p>
-          <p>
-            I'm a very ambitious Full stack developer. I love Automating tasks.
-            Also experienced with Natural Language Processing, Computer Vision.
-          </p>
-          <p>
-            I'm also a competitive coder. Python is my favorite language but
-            when it comes to competitive coding, I prefer to use C++.
-          </p>
-          <p>In love with Open Source.</p>
-          <p>
-            If I need to define myself in one sentence that would be an Anime
-            Lover, and tech-obsessed!!!
-          </p>
+          <p>My kinda skills</p>
         </div>
 
         <div className={styles.stageCubeCont}>
@@ -77,7 +41,6 @@ function About() {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   );
 }

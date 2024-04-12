@@ -1,24 +1,57 @@
 import styles from "../styles/Sidebar.module.css";
-import Link from "next/link";
+import React from "react";
+import { Typography } from "@material-ui/core";
+import { useRouter } from "next/router";
 
 function Sidebar() {
+  const router = useRouter();
+
   return (
     <div>
       <main className={styles.main}>
-        <Link href="/">
-          <p className={styles.link}>Home</p>
-        </Link>
-        <Link href="/about">
-          <p className={styles.link}>About</p>
-        </Link>
-        <Link href="/projects">
-          <p className={styles.link}>Projects</p>
-        </Link>
-        <Link href="/contact">
-          <p className={styles.link}>Contact</p>
-        </Link>
+        <div className={styles.linkWrapper}>
+          <a
+            href="/"
+            className={`${styles.link} ${
+              router.pathname === "/" && styles.activeLink
+            }`}
+          >
+            <Typography>Home</Typography>
+          </a>
+        </div>
+        <div className={styles.linkWrapper}>
+          <a
+            href="/about"
+            className={`${styles.link} ${
+              router.pathname === "/about" && styles.activeLink
+            }`}
+          >
+            <Typography>About</Typography>
+          </a>
+        </div>
+        <div className={styles.linkWrapper}>
+          <a
+            href="/projects"
+            className={`${styles.link} ${
+              router.pathname === "/projects" && styles.activeLink
+            }`}
+          >
+            <Typography>Projects</Typography>
+          </a>
+        </div>
+        <div className={styles.linkWrapper}>
+          <a
+            href="/contact"
+            className={`${styles.link} ${
+              router.pathname === "/contact" && styles.activeLink
+            }`}
+          >
+            <Typography>Contact</Typography>
+          </a>
+        </div>
       </main>
     </div>
   );
 }
+
 export default Sidebar;
