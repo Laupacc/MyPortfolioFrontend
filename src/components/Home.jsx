@@ -9,37 +9,13 @@ import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 
 function Home() {
-  const [init, setInit] = useState(false);
-
-  useEffect(() => {
-    if (init) {
-      return;
-    }
-
-    initParticlesEngine(async (engine) => {
-      await loadFull(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
-
   return (
     <>
-      <div className="App">
-        <div>
-          <main className={styles.main}>
-            <h1 className={styles.title}>Welcome to my wesbite!</h1>
-          </main>
-          <About />
-          <Projects />
-          <Contact />
-        </div>
-        {init && (
-          <Particles
-            className={styles.backgroundImage}
-            options={particlesOptions}
-          />
-        )}
+      <div className={styles.backgroundImage} />
+      <div className={styles.contentWrapper}>
+        <main className={styles.main}>
+          <h1 className={styles.title}>Welcome to my website!</h1>
+        </main>
       </div>
     </>
   );

@@ -1,24 +1,16 @@
-/* .main {
+.contentWrapper {
+  position: relative;
+}
+
+.main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 4rem 0;
-} */
-
-.backgroungImage {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  z-index: -1;
 }
 
 .title {
   line-height: 1.15;
   font-size: 4rem;
+  color: black; /* Ensure text is visible against the background */
 }

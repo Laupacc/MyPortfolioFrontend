@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
-import About from "../components/About";
+import Background from "../components/Background";
 
 function App({ Component, pageProps }) {
   return (
@@ -10,6 +10,7 @@ function App({ Component, pageProps }) {
         <title>My Portfolio</title>
       </Head>
       <Component {...pageProps} />
+      <Background />
       <Sidebar />
     </>
   );
