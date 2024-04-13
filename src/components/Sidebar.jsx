@@ -1,5 +1,5 @@
 import styles from "../styles/Sidebar.module.css";
-import React from "react";
+import * as React from "react";
 import { Typography } from "@material-ui/core";
 import { useRouter } from "next/router";
 
@@ -16,7 +16,7 @@ function Sidebar() {
               router.pathname === "/" && styles.activeLink
             }`}
           >
-            <Typography>Home</Typography>
+            <Typography className={styles.menutext}>Home</Typography>
           </a>
         </div>
         <div className={styles.linkWrapper}>
@@ -26,7 +26,7 @@ function Sidebar() {
               router.pathname === "/about" && styles.activeLink
             }`}
           >
-            <Typography>About</Typography>
+            <Typography className={styles.menutext}>About</Typography>
           </a>
         </div>
         <div className={styles.linkWrapper}>
@@ -36,7 +36,7 @@ function Sidebar() {
               router.pathname === "/projects" && styles.activeLink
             }`}
           >
-            <Typography>Projects</Typography>
+            <Typography className={styles.menutext}>Projects</Typography>
           </a>
         </div>
         <div className={styles.linkWrapper}>
@@ -46,7 +46,7 @@ function Sidebar() {
               router.pathname === "/contact" && styles.activeLink
             }`}
           >
-            <Typography>Contact</Typography>
+            <Typography className={styles.menutext}>Contact</Typography>
           </a>
         </div>
       </main>

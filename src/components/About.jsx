@@ -15,7 +15,7 @@ function About() {
     <>
       <div className={`${styles.container} ${styles.aboutPage}`}>
         <div className={styles.textZone}>
-          <p>My kinda skills</p>
+          <p className={styles.title}>My kinda skills</p>
         </div>
 
         <div className={styles.stageCubeCont}>
