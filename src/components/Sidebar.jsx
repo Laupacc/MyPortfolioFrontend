@@ -2,9 +2,18 @@ import styles from "../styles/Sidebar.module.css";
 import * as React from "react";
 import { Typography } from "@material-ui/core";
 import { useRouter } from "next/router";
+import { GiHomeGarage } from "react-icons/gi";
+import { BsInfoSquareFill } from "react-icons/bs";
+import { LuPalmtree } from "react-icons/lu";
+import { TbMessageCode } from "react-icons/tb";
 
 function Sidebar() {
   const router = useRouter();
+
+  const handleLinkClick = (event, path) => {
+    event.preventDefault();
+    router.push(path);
+  };
 
   return (
     <div>
@@ -13,10 +22,20 @@ function Sidebar() {
           <a
             href="/"
             className={`${styles.link} ${
-              router.pathname === "/" && styles.activeLink
+              (router.pathname === "/" || router.pathname === "/") &&
+              styles.activeLink
             }`}
+            onClick={(e) => handleLinkClick(e, "/")}
           >
-            <Typography className={styles.menutext}>Home</Typography>
+            <GiHomeGarage className={styles.icon} />
+            <div
+              className={`${styles.menutext} ${
+                (router.pathname === "/" || router.pathname === "/") &&
+                styles.activeText
+              }`}
+            >
+              Home
+            </div>
           </a>
         </div>
         <div className={styles.linkWrapper}>
@@ -25,8 +44,16 @@ function Sidebar() {
             className={`${styles.link} ${
               router.pathname === "/about" && styles.activeLink
             }`}
+            onClick={(e) => handleLinkClick(e, "/about")}
           >
-            <Typography className={styles.menutext}>About</Typography>
+            <BsInfoSquareFill className={styles.icon} />
+            <div
+              className={`${styles.menutext} ${
+                router.pathname === "/about" && styles.activeText
+              }`}
+            >
+              About
+            </div>
           </a>
         </div>
         <div className={styles.linkWrapper}>
@@ -35,8 +62,16 @@ function Sidebar() {
             className={`${styles.link} ${
               router.pathname === "/projects" && styles.activeLink
             }`}
+            onClick={(e) => handleLinkClick(e, "/projects")}
           >
-            <Typography className={styles.menutext}>Projects</Typography>
+            <LuPalmtree className={styles.icon} />
+            <div
+              className={`${styles.menutext} ${
+                router.pathname === "/projects" && styles.activeText
+              }`}
+            >
+              Projects
+            </div>
           </a>
         </div>
         <div className={styles.linkWrapper}>
@@ -45,8 +80,16 @@ function Sidebar() {
             className={`${styles.link} ${
               router.pathname === "/contact" && styles.activeLink
             }`}
+            onClick={(e) => handleLinkClick(e, "/contact")}
           >
-            <Typography className={styles.menutext}>Contact</Typography>
+            <TbMessageCode className={styles.icon} />
+            <div
+              className={`${styles.menutext} ${
+                router.pathname === "/contact" && styles.activeText
+              }`}
+            >
+              Contact
+            </div>
           </a>
         </div>
       </main>

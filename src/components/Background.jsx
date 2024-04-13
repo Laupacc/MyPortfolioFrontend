@@ -1,5 +1,3 @@
-// Home.js
-
 import styles from "../styles/Background.module.css";
 import Link from "next/link";
 import About from "./About";

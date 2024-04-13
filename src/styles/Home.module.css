@@ -14,3 +14,9 @@
   font-size: 4rem;
   color: black; /* Ensure text is visible against the background */
 }
+.icon {
+  font-size: 4em;
+}
+.icon:hover {
+  font-size: 5em;
+}
