@@ -5,11 +5,6 @@
   height: 100vh;
 }
 
-/* .title {
-  line-height: 1.15;
-  font-size: 4rem;
-} */
-
 .form {
   width: 100%;
   display: flex;
@@ -17,6 +12,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .formfield {
   width: 100%;
 }
@@ -26,10 +22,21 @@
   border-radius: 16px;
   box-shadow: 0 6px 80px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(211, 189, 189, 0.51);
-  width: 40em;
+  width: 35em;
   height: 30em;
   padding: 2em;
   background-color: white;
+  margin: 90%;
+}
+
+.submitBtn {
+  background-color: #f05334;
+  color: white;
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 2em;
 }
 
 @media (max-width: 1024px) {

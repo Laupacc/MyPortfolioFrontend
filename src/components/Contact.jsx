@@ -1,13 +1,6 @@
 import styles from "../styles/Contact.module.css";
-import {
-  Container,
-  Typography,
-  TextField,
-  Button,
-  Box,
-} from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 import { useRef } from "react";
-import SendIcon from "@mui/icons-material/Send";
 import Fade from "react-reveal/Fade";
 
 function Contact() {
@@ -42,8 +35,8 @@ function Contact() {
   return (
     <div>
       <main className={styles.main}>
-        <div>
-          <Fade bottom>
+        <div className={styles.container}>
+          <Fade right>
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <TextField
@@ -78,21 +71,16 @@ function Contact() {
                   margin="dense"
                   className={styles.formfield}
                 />
-                <Box mt={4}>
-                  <Button
-                    onClick={() => {
-                      alert("clicked");
-                    }}
-                    type="submit"
-                    value="Send"
-                    variant="contained"
-                    color="white"
-                    endIcon={<SendIcon />}
-                    className={styles.submitBtn}
-                  >
-                    <span component="span">Send me a message</span>
-                  </Button>
-                </Box>
+                <button
+                  onClick={() => {
+                    alert("clicked");
+                  }}
+                  type="submit"
+                  value="Send"
+                  className={styles.submitBtn}
+                >
+                  <span component="span">Send me a message</span>
+                </button>
               </form>
             </div>
           </Fade>

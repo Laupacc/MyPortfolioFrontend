@@ -9,38 +9,41 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/About.module.css";
+import Fade from "react-reveal/Fade";
 
 function About() {
   return (
     <>
-    <div className={styles.main}>
-      <div className={styles.container}>
-        <div className={styles.text}>Things I know</div>
+      <div className={styles.main}>
+        <Fade right>
+          <div className={styles.container}>
+            <div className={styles.text}>Things I know</div>
 
-        <div className={styles.stageCubeCont}>
-          <div className={styles.cubeSpinner}>
-            <div className={styles.face1}>
-              <FontAwesomeIcon icon={faNode} color="#4B8BBE" />
-            </div>
-            <div className={styles.face2}>
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className={styles.face3}>
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className={styles.face4}>
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className={styles.face5}>
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className={styles.face6}>
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            <div className={styles.stageCubeCont}>
+              <div className={styles.cubeSpinner}>
+                <div className={styles.face1}>
+                  <FontAwesomeIcon icon={faNode} color="#4B8BBE" />
+                </div>
+                <div className={styles.face2}>
+                  <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                </div>
+                <div className={styles.face3}>
+                  <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                </div>
+                <div className={styles.face4}>
+                  <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                </div>
+                <div className={styles.face5}>
+                  <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                </div>
+                <div className={styles.face6}>
+                  <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
       </div>
-    </div>
     </>
   );
 }

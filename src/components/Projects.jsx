@@ -43,7 +43,7 @@ function Projects() {
     <div>
       <main className={styles.main}>
         {projectsData.map((project) => (
-          <Fade bottom key={project.id}>
+          <Fade right key={project.id}>
             <Card className={styles.card}>
               <CardMedia
                 className={styles.cardMedia}

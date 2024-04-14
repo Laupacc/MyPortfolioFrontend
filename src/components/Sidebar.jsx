@@ -18,80 +18,83 @@ function Sidebar() {
   return (
     <>
       <div className={styles.main}>
-        <div className={styles.linkWrapper}>
-          <a
-            href="/"
-            className={`${styles.link} ${
-              (router.pathname === "/" || router.pathname === "/") &&
-              styles.activeLink
-            }`}
-            onClick={(e) => handleLinkClick(e, "/")}
-          >
-            <GiHomeGarage className={styles.icon} />
-            <div
-              className={`${styles.menutext} ${
+        <div className={styles.navWrapper}>
+          <div className={styles.linkWrapper}>
+            <a
+              href="/"
+              className={`${styles.link} ${
                 (router.pathname === "/" || router.pathname === "/") &&
-                styles.activeText
+                styles.activeLink
               }`}
+              onClick={(e) => handleLinkClick(e, "/")}
             >
-              Home
-            </div>
-          </a>
-        </div>
-        <div className={styles.linkWrapper}>
-          <a
-            href="/about"
-            className={`${styles.link} ${
-              router.pathname === "/about" && styles.activeLink
-            }`}
-            onClick={(e) => handleLinkClick(e, "/about")}
-          >
-            <BsInfoSquareFill className={styles.icon} />
-            <div
-              className={`${styles.menutext} ${
-                router.pathname === "/about" && styles.activeText
+              <GiHomeGarage className={styles.icon} />
+              <div
+                className={`${styles.menutext} ${
+                  (router.pathname === "/" || router.pathname === "/") &&
+                  styles.activeText
+                }`}
+              >
+                Home
+              </div>
+            </a>
+          </div>
+          <div className={styles.linkWrapper}>
+            <a
+              href="/about"
+              className={`${styles.link} ${
+                router.pathname === "/about" && styles.activeLink
               }`}
+              onClick={(e) => handleLinkClick(e, "/about")}
             >
-              About
-            </div>
-          </a>
-        </div>
-        <div className={styles.linkWrapper}>
-          <a
-            href="/projects"
-            className={`${styles.link} ${
-              router.pathname === "/projects" && styles.activeLink
-            }`}
-            onClick={(e) => handleLinkClick(e, "/projects")}
-          >
-            <LuPalmtree className={styles.icon} />
-            <div
-              className={`${styles.menutext} ${
-                router.pathname === "/projects" && styles.activeText
+              <BsInfoSquareFill className={styles.icon} />
+              <div
+                className={`${styles.menutext} ${
+                  router.pathname === "/about" && styles.activeText
+                }`}
+              >
+                About
+              </div>
+            </a>
+          </div>
+          <div className={styles.linkWrapper}>
+            <a
+              href="/projects"
+              className={`${styles.link} ${
+                router.pathname === "/projects" && styles.activeLink
               }`}
+              onClick={(e) => handleLinkClick(e, "/projects")}
             >
-              Projects
-            </div>
-          </a>
-        </div>
-        <div className={styles.linkWrapper}>
-          <a
-            href="/contact"
-            className={`${styles.link} ${
-              router.pathname === "/contact" && styles.activeLink
-            }`}
-            onClick={(e) => handleLinkClick(e, "/contact")}
-          >
-            <TbMessageCode className={styles.icon} />
-            <div
-              className={`${styles.menutext} ${
-                router.pathname === "/contact" && styles.activeText
+              <LuPalmtree className={styles.icon} />
+              <div
+                className={`${styles.menutext} ${
+                  router.pathname === "/projects" && styles.activeText
+                }`}
+              >
+                Projects
+              </div>
+            </a>
+          </div>
+          <div className={styles.linkWrapper}>
+            <a
+              href="/contact"
+              className={`${styles.link} ${
+                router.pathname === "/contact" && styles.activeLink
               }`}
+              onClick={(e) => handleLinkClick(e, "/contact")}
             >
-              Contact
-            </div>
-          </a>
+              <TbMessageCode className={styles.icon} />
+              <div
+                className={`${styles.menutext} ${
+                  router.pathname === "/contact" && styles.activeText
+                }`}
+              >
+                Contact
+              </div>
+            </a>
+          </div>
         </div>
+        <div className={styles.line}></div>
       </div>
     </>
   );

@@ -9,9 +9,6 @@ function Index() {
   return (
     <>
       <Home />
-      <About />
-      <Projects />
-      <Contact />
     </>
   );
 }
