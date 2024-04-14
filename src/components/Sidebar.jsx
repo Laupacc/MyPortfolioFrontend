@@ -3,9 +3,13 @@ import * as React from "react";
 import { Typography } from "@material-ui/core";
 import { useRouter } from "next/router";
 import { GiHomeGarage } from "react-icons/gi";
-import { BsInfoSquareFill } from "react-icons/bs";
+import { BsInfoSquareFill, BsPersonRaisedHand } from "react-icons/bs";
 import { LuPalmtree } from "react-icons/lu";
 import { TbMessageCode } from "react-icons/tb";
+import { PiPersonArmsSpread } from "react-icons/pi";
+import { HiOutlineHomeModern } from "react-icons/hi2";
+import { IoCodeWorkingSharp } from "react-icons/io5";
+import { TfiWrite } from "react-icons/tfi";
 
 function Sidebar() {
   const router = useRouter();
@@ -28,7 +32,7 @@ function Sidebar() {
               }`}
               onClick={(e) => handleLinkClick(e, "/")}
             >
-              <GiHomeGarage className={styles.icon} />
+              <HiOutlineHomeModern className={styles.icon} />
               <div
                 className={`${styles.menutext} ${
                   (router.pathname === "/" || router.pathname === "/") &&
@@ -47,7 +51,7 @@ function Sidebar() {
               }`}
               onClick={(e) => handleLinkClick(e, "/about")}
             >
-              <BsInfoSquareFill className={styles.icon} />
+              <PiPersonArmsSpread className={styles.icon} />
               <div
                 className={`${styles.menutext} ${
                   router.pathname === "/about" && styles.activeText
@@ -65,7 +69,7 @@ function Sidebar() {
               }`}
               onClick={(e) => handleLinkClick(e, "/projects")}
             >
-              <LuPalmtree className={styles.icon} />
+              <IoCodeWorkingSharp className={styles.icon} />
               <div
                 className={`${styles.menutext} ${
                   router.pathname === "/projects" && styles.activeText
@@ -83,7 +87,7 @@ function Sidebar() {
               }`}
               onClick={(e) => handleLinkClick(e, "/contact")}
             >
-              <TbMessageCode className={styles.icon} />
+              <TfiWrite className={styles.icon} />
               <div
                 className={`${styles.menutext} ${
                   router.pathname === "/contact" && styles.activeText

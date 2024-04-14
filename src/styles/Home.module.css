@@ -6,12 +6,34 @@
 }
 
 .textContainer {
-  max-width: 20%;
+  max-width: 30%;
   text-align: right;
-  margin: 8%;
+  margin: 3%;
 }
 
 .maintext {
-  font-size: 4em;
+  font-size: 3em;
   color: #f05334;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .textContainer {
+    max-width: 90%;
+  }
+
+  .maintext {
+    font-size: 2em;
+  }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .textContainer {
+    max-width: 100%;
+  }
+
+  .maintext {
+    font-size: 1.5em;
+  }
 }

@@ -9,7 +9,7 @@ function Home() {
         <div className={styles.textContainer}>
           <Fade right>
             <div className={styles.maintext}>
-              Hi, I'm Laura, junior web developer.
+              Hi, I'm Laura, FullStack JavaScript web & mobile developer.
             </div>
           </Fade>
         </div>

@@ -119,3 +119,21 @@
   transform: rotateX(-90deg) translateZ(100px);
   -moz-transform: rotateX(-90deg) translateZ(100px);
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 4%;
+  }
+  .text {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 2%;
+  }
+  .text {
+    font-size: 2em;
+  }
+}

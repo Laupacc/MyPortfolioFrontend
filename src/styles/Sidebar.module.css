@@ -11,10 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #c2b9b9;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%; */
   margin-right: 3%;
 }
 .linkWrapper {
@@ -46,7 +42,6 @@
 
 .activeText {
   visibility: visible;
-  /* font-size: 1.5em; */
 }
 .line {
   position: absolute;
@@ -54,4 +49,29 @@
   width: 75%;
   height: 2px;
   background-color: #f05334;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .main {
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .navWrapper {
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .linkWrapper {
+    margin: 0.5em 0;
+  }
+
+  .link {
+    font-size: 1.2em;
+  }
+
+  .icon {
+    font-size: 2em;
+  }
 }

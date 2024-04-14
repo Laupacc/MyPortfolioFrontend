@@ -19,6 +19,7 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/styles": "^5.15.15",
     "@react-spring/web": "^9.7.3",
     "@stitches/react": "^1.2.8",
     "@tsparticles/react": "^3.0.0",
