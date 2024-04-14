@@ -42,69 +42,61 @@ function Contact() {
   return (
     <div>
       <main className={styles.main}>
-        <section id="contact">
+        <div>
           <Fade bottom>
-            <Container
-              component="main"
-              className={styles.mainform}
-              maxWidth="md"
-            >
-              <div className={styles.contact}>
-                <div className={styles._form_wrapper}>
-                  <form ref={form} onSubmit={sendEmail} className={styles.form}>
-                    <TextField
-                      id="outlined-name-input"
-                      label="Name"
-                      type="text"
-                      size="normal"
-                      variant="filled"
-                      name="name"
-                      margin="dense"
-                      className={styles.formfield}
-                    />
-                    <TextField
-                      id="outlined-email-input"
-                      label="Email"
-                      type="email"
-                      size="normal"
-                      variant="filled"
-                      name="email"
-                      margin="dense"
-                      className={styles.formfield}
-                    />
-                    <TextField
-                      id="outlined-text-input"
-                      label="Message"
-                      type="textarea"
-                      size="normal"
-                      multiline
-                      minRows={5}
-                      variant="filled"
-                      name="message"
-                      margin="dense"
-                      className={styles.formfield}
-                    />
-                    <Box mt={4}>
-                      <Button
-                        onClick={() => {
-                          alert("clicked");
-                        }}
-                        type="submit"
-                        value="Send"
-                        variant="contained"
-                        color="white"
-                        endIcon={<SendIcon />}
-                        className={styles.submitBtn}
-                      >
-                        <span component="span">Send me a message</span>
-                      </Button>
-                    </Box>
-                  </form>
-                </div>
-              </div>
-            </Container>
+            <div className={styles.formwrapper}>
+              <form ref={form} onSubmit={sendEmail} className={styles.form}>
+                <TextField
+                  id="outlined-name-input"
+                  label="Name"
+                  type="text"
+                  size="normal"
+                  variant="filled"
+                  name="name"
+                  margin="dense"
+                  className={styles.formfield}
+                />
+                <TextField
+                  id="outlined-email-input"
+                  label="Email"
+                  type="email"
+                  size="normal"
+                  variant="filled"
+                  name="email"
+                  margin="dense"
+                  className={styles.formfield}
+                />
+                <TextField
+                  id="outlined-text-input"
+                  label="Message"
+                  type="textarea"
+                  size="normal"
+                  multiline
+                  minRows={5}
+                  variant="filled"
+                  name="message"
+                  margin="dense"
+                  className={styles.formfield}
+                />
+                <Box mt={4}>
+                  <Button
+                    onClick={() => {
+                      alert("clicked");
+                    }}
+                    type="submit"
+                    value="Send"
+                    variant="contained"
+                    color="white"
+                    endIcon={<SendIcon />}
+                    className={styles.submitBtn}
+                  >
+                    <span component="span">Send me a message</span>
+                  </Button>
+                </Box>
+              </form>
+            </div>
           </Fade>
-        </section>
+        </div>
       </main>
     </div>
   );

@@ -19,7 +19,8 @@
   top: 0;
   z-index: -1;
 } */
-.backgroundImage {
+
+/* .backgroundImage {
   background: #c94b4b;
   background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
   background: linear-gradient(to right, #4b134f, #c94b4b);
@@ -42,4 +43,20 @@
   100% {
     background-position: 100% 50%;
   }
+} */
+
+.backgroundImage {
+  background-image: url("/assets/images/BackgroundImage21n.png");
+  background-position: -45% 45%;
+  background-repeat: no-repeat;
+  background-size: 82%;
+  background-color: #dfdfdf;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }

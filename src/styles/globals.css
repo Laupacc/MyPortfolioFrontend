@@ -9,4 +9,11 @@ body {
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: Pacifico;
+  src: url(/fonts/Pacifico-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Jersey;
+  src: url(/fonts/Jersey10Charted-Regular.ttf) format("truetype");
+}

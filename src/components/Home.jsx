@@ -3,16 +3,16 @@ import Link from "next/link";
 import { FcNews, FcSurvey, FcRules, FcDocument } from "react-icons/fc";
 
 function Home() {
-  const PDF = "/WebDeveloperCV.pdf";
+  const ResumePDF = "/WebDeveloperCV.pdf";
   return (
     <>
       <div className={styles.backgroundImage} />
       <div className={styles.contentWrapper}>
         <main className={styles.main}>
-          <h1 className={styles.title}>Welcome to my website!</h1>
+          {/* <h1 className={styles.title}>Welcome to my website!</h1> */}
         </main>
         <Link
-          href={PDF}
+          href={ResumePDF}
           target="_blank"
           rel="noopener noreferrer"
           color="inherit"

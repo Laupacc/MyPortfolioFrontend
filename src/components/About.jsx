@@ -14,9 +14,9 @@ function About() {
   return (
     <>
       <div className={`${styles.container} ${styles.aboutPage}`}>
-        <div className={styles.textZone}>
+        {/* <div className={styles.textZone}>
           <p className={styles.title}>My kinda skills</p>
-        </div>
+        </div> */}
 
         <div className={styles.stageCubeCont}>
           <div className={styles.cubeSpinner}>

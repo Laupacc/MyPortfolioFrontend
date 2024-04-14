@@ -26,7 +26,7 @@ function Background() {
   return (
     <>
       <div className={styles.backgroundImage}>
-        {init && <Particles options={particlesOptions} />}
+        {/* {init && <Particles options={particlesOptions} />} */}
       </div>
     </>
   );
