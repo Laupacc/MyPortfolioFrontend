@@ -1,23 +1,18 @@
-.contentWrapper {
-  position: relative;
-}
-
-.main {
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   min-height: 100vh;
 }
 
-.title {
-  line-height: 1.15;
-  font-size: 4rem;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.textContainer {
+  max-width: 20%;
+  text-align: right;
+  margin: 8%;
 }
-.icon {
+
+.maintext {
+  font-family: Changa;
   font-size: 4em;
-}
-.icon:hover {
-  font-size: 5em;
+  color: #f05334;
 }

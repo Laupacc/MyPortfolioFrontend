@@ -17,3 +17,11 @@ body {
   font-family: Jersey;
   src: url(/fonts/Jersey10Charted-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: KodeMono;
+  src: url(/fonts/KodeMono-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: Changa;
+  src: url(/fonts/Changa-VariableFont_wght.ttf) format("truetype");
+}

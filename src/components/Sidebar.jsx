@@ -7,8 +7,6 @@ import { BsInfoSquareFill } from "react-icons/bs";
 import { LuPalmtree } from "react-icons/lu";
 import { TbMessageCode } from "react-icons/tb";
 
-
-
 function Sidebar() {
   const router = useRouter();
 
@@ -18,8 +16,8 @@ function Sidebar() {
   };
 
   return (
-    <div>
-      <main className={styles.main}>
+    <>
+      <div className={styles.main}>
         <div className={styles.linkWrapper}>
           <a
             href="/"
@@ -94,8 +92,8 @@ function Sidebar() {
             </div>
           </a>
         </div>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
 

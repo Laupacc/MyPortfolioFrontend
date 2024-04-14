@@ -13,10 +13,9 @@ import styles from "../styles/About.module.css";
 function About() {
   return (
     <>
-      <div className={`${styles.container} ${styles.aboutPage}`}>
-        {/* <div className={styles.textZone}>
-          <p className={styles.title}>My kinda skills</p>
-        </div> */}
+    <div className={styles.main}>
+      <div className={styles.container}>
+        <div className={styles.text}>Things I know</div>
 
         <div className={styles.stageCubeCont}>
           <div className={styles.cubeSpinner}>
@@ -41,6 +40,7 @@ function About() {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 }

@@ -1,20 +1,23 @@
-.container {
+.main {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.textZone {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 50%;
+  align-items: flex-end;
+  margin: 8%;
 }
-.title{
-  line-height: 1.15;
-  font-size: 4rem;
+
+.text {
+  font-family: Changa;
+  font-size: 4em;
+  color: #f05334;
+  padding-bottom: 30%;
 }
 
 .stageCubeCont {
