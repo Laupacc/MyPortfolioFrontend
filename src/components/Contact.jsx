@@ -2,36 +2,47 @@ import styles from "../styles/Contact.module.css";
 import { TextField } from "@material-ui/core";
 import { useRef } from "react";
 import Fade from "react-reveal/Fade";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_8bezxog",
-        "template_jmsk313",
+        "service_k9ca013",
+        "template_g7ptkxt",
         form.current,
-        "knwNTK4YU4K30HYMd"
+        "KfnI1xY_NyLZrmb17"
       )
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Thank you for your email",
+            showConfirmButton: false,
+            timer: 2500,
+          });
+          e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "There was an error submitting your message",
+            showConfirmButton: false,
+            timer: 2500,
+          });
         }
       );
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "You have sent an email!",
-      showConfirmButton: false,
-      timer: 1500,
-    });
-    e.target.reset();
   };
+
   return (
     <div>
       <main className={styles.main}>
@@ -40,6 +51,7 @@ function Contact() {
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <TextField
+                  required
                   id="outlined-name-input"
                   label="Name"
                   type="text"
@@ -50,6 +62,7 @@ function Contact() {
                   className={styles.formfield}
                 />
                 <TextField
+                  required
                   id="outlined-email-input"
                   label="Email"
                   type="email"
@@ -60,6 +73,7 @@ function Contact() {
                   className={styles.formfield}
                 />
                 <TextField
+                  required
                   id="outlined-text-input"
                   label="Message"
                   type="textarea"
@@ -71,14 +85,7 @@ function Contact() {
                   margin="dense"
                   className={styles.formfield}
                 />
-                <button
-                  onClick={() => {
-                    alert("clicked");
-                  }}
-                  type="submit"
-                  value="Send"
-                  className={styles.submitBtn}
-                >
+                <button type="submit" value="Send" className={styles.submitBtn}>
                   <span component="span">Send me a message</span>
                 </button>
               </form>

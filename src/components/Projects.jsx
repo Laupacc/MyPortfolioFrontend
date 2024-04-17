@@ -18,7 +18,7 @@ const projectsData = [
     demoLink: "https://example.com/demo1",
   },
   {
-    id: 1,
+    id: 2,
     title: "What is Git ?",
     subtitle:
       "Git is a distributed version control system. Every dev has a working copy of the code and...",
@@ -27,7 +27,7 @@ const projectsData = [
     demoLink: "https://example.com/demo1",
   },
   {
-    id: 1,
+    id: 3,
     title: "What is Git ?",
     subtitle:
       "Git is a distributed version control system. Every dev has a working copy of the code and...",
@@ -36,7 +36,7 @@ const projectsData = [
     demoLink: "https://example.com/demo1",
   },
   {
-    id: 1,
+    id: 4,
     title: "What is Git ?",
     subtitle:
       "Git is a distributed version control system. Every dev has a working copy of the code and...",
@@ -45,7 +45,7 @@ const projectsData = [
     demoLink: "https://example.com/demo1",
   },
   {
-    id: 1,
+    id: 5,
     title: "What is Git ?",
     subtitle:
       "Git is a distributed version control system. Every dev has a working copy of the code and...",
