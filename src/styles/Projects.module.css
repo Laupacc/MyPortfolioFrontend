@@ -1,8 +1,12 @@
 .main {
   height: 100vh;
+  min-width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .cardContainer {
@@ -12,6 +16,13 @@
   flex-wrap: nowrap;
 }
 
-.scrollContainer {
-  overflow-x: auto;
+.scrollText {
+  position: fixed;
+  top: 11rem;
+  right: 3rem;
+  font-size: 2.5em;
+  color: #f05334;
+  z-index: 999;
+  max-width: 30%;
+  text-align: right;
 }

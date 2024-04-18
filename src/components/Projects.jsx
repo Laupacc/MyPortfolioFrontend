@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
+import { FaArrowRightArrowLeft } from "react-icons/fa6";
 
 const projectsData = [
   {
@@ -57,10 +58,10 @@ const projectsData = [
 
 function Projects() {
   return (
-    <div className={styles.scrollContainer}>
+    <>
+      <p className={styles.scrollText}>Scroll ⇨ for more projects</p>
       <main className={styles.main}>
         <Fade right>
-          {/* <Container maxWidth="xl"> */}
           <div className={styles.cardContainer}>
             {projectsData.map((project) => (
               <Card
@@ -71,7 +72,7 @@ function Projects() {
                   boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
                   position: "relative",
                   width: 550,
-                  maxHeight: 350,
+                  height: 350,
                   marginLeft: theme.spacing(6),
                   marginRight: theme.spacing(6),
                   marginBottom: theme.spacing(4),
@@ -160,10 +161,9 @@ function Projects() {
               </Card>
             ))}
           </div>
-          {/* </Container> */}
         </Fade>
       </main>
-    </div>
+    </>
   );
 }
 

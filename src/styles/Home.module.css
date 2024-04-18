@@ -16,24 +16,30 @@
   color: #f05334;
 }
 
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-  .textContainer {
-    max-width: 90%;
-  }
 
-  .maintext {
-    font-size: 2em;
-  }
+
+.text {
+  font-size: 4em;
+  color: #f05334;
+  padding-bottom: 30%;
+  display: flex;
+}
+.wordWrapper:hover {
+  color: #e77e69;
+  /* transform: scale(1.4); */
+  transition: all 0.3s ease;
+  animation: bounce 0.3s ease;
+  cursor: pointer;
 }
 
-/* Media Query for even smaller screens */
-@media screen and (max-width: 480px) {
-  .textContainer {
-    max-width: 100%;
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-
-  .maintext {
-    font-size: 1.5em;
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

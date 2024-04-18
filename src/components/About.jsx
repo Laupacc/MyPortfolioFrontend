@@ -10,14 +10,48 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/About.module.css";
 import Fade from "react-reveal/Fade";
+import ReactTextTransition from "react-text-transition";
 
 function About() {
+  // const [randomIndex, setRandomIndex] = useState(0);
+  // const text = [
+  //   "Things/I/know",
+  //   "more/stuff",
+  //   "and/again",
+  //   "oh/maybe/not",
+  //   "ok/last/one",
+  // ];
+  // function getRandomText(min, max) {
+  //   return Math.floor(Math.random() * (max - min + 1)) + min;
+  // }
+  // useEffect(() => {
+  //   let interval = setInterval(() => {
+  //     setRandomIndex(getRandomText(0, text.length));
+  //   }, 4000);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
+
   return (
     <>
       <div className={styles.main}>
         <Fade right>
           <div className={styles.container}>
-            <div className={styles.text}>Things I know</div>
+            {/* <div className={styles.textChanging}>
+              {`${text[randomIndex]}`.split("").map((txt, i) => (
+                <ReactTextTransition key={i} delay={i * 100}>
+                  {txt}
+                </ReactTextTransition>
+              ))}
+            </div> */}
+            <div className={styles.waviy}>
+              <span style={{ "--i": 1 }}>A</span>
+              <span style={{ "--i": 2 }}>b</span>
+              <span style={{ "--i": 3 }}>o</span>
+              <span style={{ "--i": 4 }}>u</span>
+              <span style={{ "--i": 5 }}>t</span>
+            </div>
 
             <div className={styles.stageCubeCont}>
               <div className={styles.cubeSpinner}>
