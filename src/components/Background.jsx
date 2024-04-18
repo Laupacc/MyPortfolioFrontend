@@ -6,7 +6,7 @@ import Contact from "./Contact";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-import particlesOptions from "./particles.json";
+import particlesOptions from "../data/particles.json";
 
 function Background() {
   const [init, setInit] = useState(false);

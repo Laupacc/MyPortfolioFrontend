@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "My Movies",
+    "subtitle": "My Movies is a website where you can view the latest movie releases, create a wishlist, track views, and rate each film",
+    "imageUrl": "https://images.unsplash.com/photo-1543536448-d209d2d13a1c?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "demoLink": "https://my-movies-frontend-six.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Weather App",
+    "subtitle": "I crafted a dynamic weather app from scratch, keeping users in the loop with accurate forecasts and live weather updates, making staying ahead of the elements a breeze",
+    "imageUrl": "https://images.unsplash.com/photo-1630260643564-7f9c9c140682?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "demoLink": "https://weatherapp-frontend-red.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Morning News",
+    "subtitle": "Stay informed from sunrise to sunset with our morning news app, your daily dose of headlines and updates",
+    "imageUrl": "https://images.unsplash.com/photo-1504465039710-0f49c0a47eb7?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "demoLink": "https://morning-news-frontend-alpha.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Memory Game",
+    "subtitle": "It's a cool memory game where you have to match the cards. It's a fun way to test your memory skills",
+    "imageUrl": "https://images.unsplash.com/photo-1621211255064-8915268b62f4?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "demoLink": "https://memory-game-frontend-neon.vercel.app"
+  },
+  {
+    "id": 5,
+    "title": "Hackatweet",
+    "subtitle": "Hackatweet is a Twitter clone where you can tweet, like, and retweet. It's a fun way to share your thoughts with the world",
+    "imageUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "demoLink": "https://hackatweet-frontend-good.vercel.app"
+  }
+]
