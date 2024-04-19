@@ -1,35 +1,39 @@
 .main {
-  height: 100vh;
-  min-width: fit-content;
+  height: fit-content;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
-
-.scrollText {
-  position: fixed;
-  top: 11rem;
-  right: 3rem;
-  font-size: 2.5em;
-  color: #f05334;
-  z-index: 999;
-  max-width: 30%;
-  text-align: right;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .webContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  margin-top: 3rem;
 }
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: -12rem;
+  margin-left: -12rem;
+}
+
+.phonecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: -12rem;
 }
 
 .content {
@@ -37,17 +41,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -8rem;
-  max-width: 60%;
+  margin-top: -10rem;
+  max-width: 40%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
 .title {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #f05334;
 }
 
 .subtitle {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .phoneContainer {
@@ -57,7 +66,23 @@
   flex-wrap: nowrap;
 }
 
-.containerphone {
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f05334;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* .containerphone {
   height: 50vh;
   margin: 10vh auto;
   width: auto;
@@ -109,4 +134,4 @@
   height: 15px;
   top: 50px;
   left: 110px;
-}
+} */

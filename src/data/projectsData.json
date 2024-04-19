@@ -44,16 +44,16 @@
       "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
-      "id": 2,
-      "title": "Apple",
-      "subtitle": "iPhone 13",
-      "imageUrl": "https://i.imgur.com/Ll0mOvh.png"
+      "id": 1,
+      "title": "FoodApp",
+      "subtitle": "Discover new culinary delights and share your favorite recipes with the innovative food app",
+      "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
-      "id": 3,
-      "title": "Google",
-      "subtitle": "Pixel 6",
-      "imageUrl": "https://i.imgur.com/Ll0mOvh.png"
+      "id": 1,
+      "title": "FoodApp",
+      "subtitle": "Discover new culinary delights and share your favorite recipes with the innovative food app",
+      "imageUrl": "https://i.imgur.com/t2T76aw.png"
     }
   ]
 }
