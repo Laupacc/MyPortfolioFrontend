@@ -16,27 +16,27 @@ function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");
   return (
     <>
+      <div className={styles.buttonContainer}>
+        <Button
+          className={styles.topbuttons}
+          onClick={() => setSelectedCategory("WEB")}
+        >
+          Web apps
+        </Button>
+        <Button
+          className={styles.topbuttons}
+          onClick={() => setSelectedCategory("MOBILE")}
+        >
+          Mobile apps
+        </Button>
+      </div>
       <main className={styles.main}>
         <Fade right>
           <div className={styles.container}>
-            <div className={styles.buttonContainer}>
-              <Button
-                className={styles.button}
-                onClick={() => setSelectedCategory("WEB")}
-              >
-                WEB
-              </Button>
-              <Button
-                className={styles.button}
-                onClick={() => setSelectedCategory("MOBILE")}
-              >
-                MOBILE
-              </Button>
-            </div>
             {selectedCategory === "WEB" && (
               <div className={styles.webContainer}>
                 {projectsData.webProjects.map((project) => (
-                  <div className={styles.card}>
+                  <div className={styles.webcard}>
                     <DeviceFrameset
                       device="MacBook Pro"
                       zoom={"50%"}

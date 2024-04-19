@@ -13,13 +13,17 @@
 }
 .webContainer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+.phoneContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
+.webcard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,27 +63,44 @@
   font-size: 1em;
 }
 
-.phoneContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
 .buttonContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 .button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
   background-color: #f05334;
   color: white;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+.button:hover {
+  background-color: #dfdfdf;
+  border: black;
+  color: black;
+}
+.topbuttons {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #f05334;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.topbuttons:hover {
+  background-color: #dfdfdf;
+  border: black;
+  color: black;
 }
 
 /* .containerphone {
