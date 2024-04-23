@@ -1,16 +1,10 @@
 import styles from "../styles/Projects.module.css";
-import Box from "@mui/material/Box";
 import Fade from "react-reveal/Fade";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
 import projectsData from "../data/projectsData.json";
 import { DeviceFrameset } from "react-device-frameset";
 import "react-device-frameset/styles/marvel-devices.min.css";
 import { useState } from "react";
-
-import { IPhoneX } from "react-device-frames";
 
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");
@@ -98,12 +92,7 @@ function Projects() {
             </div>
           </div> */}
 
-          {/* <IPhoneX
-            screenshot={"https://i.imgur.com/oLOEoYv.png"}
-            height={500}
-          /> */}
-
-          {/* {projectsData.map((project) => (
+          {/* {projectsData.webProjects.map((project) => (
             <div className={styles.computer}>
               <div className={styles.stand}>
                 <div
