@@ -7,9 +7,9 @@
 }
 .container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .webContainer {
   display: flex;
@@ -21,6 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  margin-left: 10rem;
 }
 
 .webcard {
@@ -37,10 +39,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: -12rem;
+  margin-left: -4rem;
 }
 
-.content {
+.webContainer .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +50,21 @@
   margin-top: -10rem;
   max-width: 40%;
   height: fit-content;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.phoneContainer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10rem;
+  max-width: 60%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255, 0.9);
   border-radius: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 1rem;

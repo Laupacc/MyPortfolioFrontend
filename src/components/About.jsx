@@ -11,46 +11,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/About.module.css";
 import Fade from "react-reveal/Fade";
 import ReactTextTransition from "react-text-transition";
+import Sidebar from "./Sidebar";
 
 function About() {
-  // const [randomIndex, setRandomIndex] = useState(0);
-  // const text = [
-  //   "Things/I/know",
-  //   "more/stuff",
-  //   "and/again",
-  //   "oh/maybe/not",
-  //   "ok/last/one",
-  // ];
-  // function getRandomText(min, max) {
-  //   return Math.floor(Math.random() * (max - min + 1)) + min;
-  // }
-  // useEffect(() => {
-  //   let interval = setInterval(() => {
-  //     setRandomIndex(getRandomText(0, text.length));
-  //   }, 4000);
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
-
   return (
     <>
       <div className={styles.main}>
+        <Sidebar />
         <Fade right>
           <div className={styles.container}>
-            {/* <div className={styles.textChanging}>
-              {`${text[randomIndex]}`.split("").map((txt, i) => (
-                <ReactTextTransition key={i} delay={i * 100}>
-                  {txt}
-                </ReactTextTransition>
-              ))}
-            </div> */}
-            <div className={styles.waviy}>
+            <div className={styles.wavy}>
               <span style={{ "--i": 1 }}>A</span>
               <span style={{ "--i": 2 }}>b</span>
               <span style={{ "--i": 3 }}>o</span>
               <span style={{ "--i": 4 }}>u</span>
               <span style={{ "--i": 5 }}>t</span>
+            </div>
+            <div className={styles.aboutText}>
+              I have a background in anthropology and project management,
+              co-founded a coffee store but now specialize in full-stack
+              development. Combining an enthusiasm for technology and a knack
+              for business, I approach each project with a fresh and distinctive
+              outlook.
             </div>
 
             <div className={styles.stageCubeCont}>

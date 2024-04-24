@@ -11,7 +11,6 @@ function App({ Component, pageProps }) {
         <title>My Portfolio</title>
       </Head>
       <Component {...pageProps} />
-      <Sidebar />
       <Background />
       <Resume />
     </>

@@ -16,7 +16,7 @@ function Resume() {
           underline="none"
         >
           <FcNews className={styles.icon} />
-          My Resume
+          <span className={styles.text}>My Resume</span>
         </Link>
       </div>
     </>

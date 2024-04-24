@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Fade from "react-reveal/Fade";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import Sidebar from "../components/Sidebar";
 
 function Contact() {
   const form = useRef();
@@ -46,6 +47,7 @@ function Contact() {
   return (
     <div>
       <main className={styles.main}>
+      <Sidebar />
         <div className={styles.container}>
           <Fade right>
             <div className={styles.formwrapper}>

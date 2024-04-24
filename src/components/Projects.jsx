@@ -5,27 +5,29 @@ import projectsData from "../data/projectsData.json";
 import { DeviceFrameset } from "react-device-frameset";
 import "react-device-frameset/styles/marvel-devices.min.css";
 import { useState } from "react";
+import Sidebar from "../components/Sidebar";
 
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");
   return (
     <>
-      <div className={styles.buttonContainer}>
-        <a
-          className={styles.topbuttons}
-          onClick={() => setSelectedCategory("WEB")}
-        >
-          Web apps
-        </a>
-        <a
-          className={styles.topbuttons}
-          onClick={() => setSelectedCategory("MOBILE")}
-        >
-          Mobile apps
-        </a>
-      </div>
       <main className={styles.main}>
+        <Sidebar />
         <Fade right>
+          <div className={styles.buttonContainer}>
+            <a
+              className={styles.topbuttons}
+              onClick={() => setSelectedCategory("WEB")}
+            >
+              Web apps
+            </a>
+            <a
+              className={styles.topbuttons}
+              onClick={() => setSelectedCategory("MOBILE")}
+            >
+              Mobile apps
+            </a>
+          </div>
           <div className={styles.container}>
             {selectedCategory === "WEB" && (
               <div className={styles.webContainer}>

@@ -10,18 +10,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin: 8%;
+  margin: 3%;
+  text-align: right;
+  max-width: 30%;
 }
 
-/* .textChanging {
-  font-size: 2em;
+.aboutText {
+  font-size: 1.8em;
   color: #f05334;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.wavy {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
-} */
+  color: #f05334;
+  margin-top: 6rem;
+  font-size: 4em;
+}
+.wavy span {
+  animation: flip 6s infinite;
+  animation-delay: calc(0.2s * var(--i));
+  color: #f05334;
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
 
 .stageCubeCont {
   width: 200px;
@@ -29,6 +48,7 @@
   position: relative;
   perspective: 1000px;
   -moz-perspective: 1000px;
+  margin-right: 2rem;
 }
 
 .cubeSpinner {
@@ -124,39 +144,66 @@
   -moz-transform: rotateX(-90deg) translateZ(100px);
 }
 
-@media only screen and (max-width: 768px) {
+/* Media queries for smaller screens */
+@media screen and (max-width: 576px) {
   .container {
-    margin: 4%;
+    max-width: 90%;
   }
-  .text {
+
+  .aboutText {
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+  }
+
+  .wavy {
+    margin-top: 2rem;
+    font-size: 2.5em;
+  }
+
+  .stageCubeCont {
+    max-width: 200px;
+  }
+}
+
+/* Media queries for medium-sized screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .aboutText {
+    font-size: 1.8em;
+    margin-bottom: 4rem;
+  }
+
+  .wavy {
+    margin-top: 4rem;
     font-size: 3em;
   }
+
+  .stageCubeCont {
+    max-width: 250px;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+/* Media queries for large screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
-    margin: 2%;
+    max-width: 70%;
   }
-  .text {
+
+  .aboutText {
     font-size: 2em;
+    margin-bottom: 5rem;
+  }
+
+  .wavy {
+    margin-top: 5rem;
+    font-size: 4em;
+  }
+
+  .stageCubeCont {
+    max-width: 300px;
   }
 }
 
-.waviy {
-  position: relative;
-  display: flex;
-  padding-bottom: 30%;
-}
-.waviy span {
-  position: relative;
-  animation: flip 6s infinite;
-  animation-delay: calc(0.2s * var(--i));
-  font-size: 4em;
-  color: #f05334;
-}
-@keyframes flip {
-  0%,
-  80% {
-    transform: rotateY(360deg);
-  }
-}

@@ -1,24 +1,28 @@
-.container {
+.main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   min-height: 100vh;
 }
 
-.textContainer {
-  max-width: 30%;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   text-align: right;
   margin: 3%;
+  max-width: 30%;
 }
 
 .maintext {
+  display: flex;
   font-size: 3em;
   color: #f05334;
+  margin-top: 4rem;
 }
 
-
-
-.text {
+/* .text {
   font-size: 4em;
   color: #f05334;
   padding-bottom: 30%;
@@ -26,7 +30,6 @@
 }
 .wordWrapper:hover {
   color: #e77e69;
-  /* transform: scale(1.4); */
   transition: all 0.3s ease;
   animation: bounce 0.3s ease;
   cursor: pointer;
@@ -41,5 +44,27 @@
   }
   100% {
     transform: translateY(0);
+  }
+} */
+
+.wavy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  color: #f05334;
+  margin-top: 6rem;
+  /* margin-bottom: 7rem; */
+}
+.wavy span {
+  animation: flip 6s infinite;
+  animation-delay: calc(0.2s * var(--i));
+  font-size: 4em;
+  color: #f05334;
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
   }
 }
