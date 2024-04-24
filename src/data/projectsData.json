@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "My Movies",
-      "subtitle": "My Movies is a website where you can view the latest movie releases, create a wishlist, track views, and rate each film",
+      "subtitle": "My Movies is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film",
       "imageUrl": "https://i.imgur.com/oLOEoYv.png",
       "demoLink": "https://my-movies-frontend-six.vercel.app/"
     },
@@ -17,7 +17,7 @@
     {
       "id": 3,
       "title": "Morning News",
-      "subtitle": "Stay informed from sunrise to sunset with our morning news app, your daily dose of headlines and updates",
+      "subtitle": "Stay informed from sunrise to sunset with this morning news app, your daily dose of headlines and updates",
       "imageUrl": "https://i.imgur.com/SD7efJg.png",
       "demoLink": "https://morning-news-frontend-alpha.vercel.app/"
     },
@@ -39,21 +39,21 @@
   "phoneProjects": [
     {
       "id": 1,
+      "title": "GiftEase",
+      "subtitle": "Create and share wishlists with friends and family, and never miss a special occasion again",
+      "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
+    },
+    {
+      "id": 2,
       "title": "FoodApp",
-      "subtitle": "Discover new culinary delights and share your favorite recipes with the innovative food app",
+      "subtitle": "Discover new culinary delights and save your favorite recipes with the innovative food app",
       "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
-      "id": 1,
-      "title": "FoodApp",
-      "subtitle": "Discover new culinary delights and share your favorite recipes with the innovative food app",
-      "imageUrl": "https://i.imgur.com/t2T76aw.png"
-    },
-    {
-      "id": 1,
-      "title": "FoodApp",
-      "subtitle": "Discover new culinary delights and share your favorite recipes with the innovative food app",
-      "imageUrl": "https://i.imgur.com/t2T76aw.png"
+      "id": 3,
+      "title": "Location App",
+      "subtitle": "Find your way around town with the location app, your trusty guide to local attractions and hidden gems",
+      "imageUrl": "https://i.imgur.com/mRj3B4W.jpeg"
     }
   ]
 }

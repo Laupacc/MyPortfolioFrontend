@@ -69,8 +69,7 @@
   align-items: center;
   position: fixed;
   top: 4rem;
-  left: 0;
-  right: 0;
+  left: 100px;
   z-index: 999;
 }
 
@@ -81,6 +80,7 @@
   color: white;
   border: none;
   border-radius: 0.5rem;
+  text-decoration: none;
   cursor: pointer;
 }
 .button:hover {
@@ -89,12 +89,17 @@
   color: black;
 }
 .topbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1rem;
-  padding: 0.5rem 2rem;
+  width: 12rem;
+  height: 3rem;
   background-color: #f05334;
   color: white;
   border: none;
   border-radius: 0.5rem;
+  text-decoration: none;
   cursor: pointer;
 }
 .topbuttons:hover {

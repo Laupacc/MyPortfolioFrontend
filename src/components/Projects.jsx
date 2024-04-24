@@ -11,18 +11,18 @@ function Projects() {
   return (
     <>
       <div className={styles.buttonContainer}>
-        <Button
+        <a
           className={styles.topbuttons}
           onClick={() => setSelectedCategory("WEB")}
         >
           Web apps
-        </Button>
-        <Button
+        </a>
+        <a
           className={styles.topbuttons}
           onClick={() => setSelectedCategory("MOBILE")}
         >
           Mobile apps
-        </Button>
+        </a>
       </div>
       <main className={styles.main}>
         <Fade right>
@@ -41,23 +41,23 @@ function Projects() {
                         width="100%"
                         height="100%"
                       />
-                      <img
+                      {/* <img
                         className={styles.imageUrl}
                         src={project.imageUrl}
                         alt={project.title}
-                      />
+                      /> */}
                     </DeviceFrameset>
 
                     <div className={styles.content}>
                       <div className={styles.title}>{project.title}</div>
                       <div className={styles.subtitle}>{project.subtitle}</div>
-                      <Button
+                      <a
                         className={styles.button}
                         href={project.demoLink}
                         target="_blank"
                       >
                         To website
-                      </Button>
+                      </a>
                     </div>
                   </div>
                 ))}
