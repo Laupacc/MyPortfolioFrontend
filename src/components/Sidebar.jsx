@@ -26,6 +26,7 @@ function Sidebar() {
                 styles.activeLink
               }`}
               onClick={(e) => handleLinkClick(e, "/")}
+              aria-label="Home"
             >
               <HiOutlineHomeModern className={styles.icon} />
               <div
@@ -45,6 +46,7 @@ function Sidebar() {
                 router.pathname === "/about" && styles.activeLink
               }`}
               onClick={(e) => handleLinkClick(e, "/about")}
+              aria-label="About"
             >
               <PiPersonArmsSpread className={styles.icon} />
               <div
@@ -63,6 +65,7 @@ function Sidebar() {
                 router.pathname === "/projects" && styles.activeLink
               }`}
               onClick={(e) => handleLinkClick(e, "/projects")}
+              aria-label="Projects"
             >
               <IoCodeWorkingSharp className={styles.icon} />
               <div
@@ -81,6 +84,7 @@ function Sidebar() {
                 router.pathname === "/contact" && styles.activeLink
               }`}
               onClick={(e) => handleLinkClick(e, "/contact")}
+              aria-label="Contact"
             >
               <TfiWrite className={styles.icon} />
               <div

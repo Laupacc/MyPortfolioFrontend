@@ -1,16 +1,9 @@
 .icon {
   font-size: 3em;
 }
-.icon:hover {
-  font-size: 5em;
-}
-.text{
+.text {
   font-size: 1.2em;
   color: #f05334;
-}
-.text:hover{
-  color: black;
- 
 }
 .link {
   display: flex;
@@ -22,6 +15,10 @@
   bottom: 3%;
   left: 3%;
   background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   padding: 0.5rem;
+}
+.link:hover {
+  font-size: 1.3em;
 }

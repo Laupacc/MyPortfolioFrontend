@@ -11,24 +11,30 @@ body {
 @font-face {
   font-family: KodeMono;
   src: url(/fonts/KodeMono-VariableFont_wght.ttf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: Changa;
   src: url(/fonts/Changa-VariableFont_wght.ttf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: SpaceGrotesk;
   src: url(/fonts/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: RedHatDisplay;
   src: url(/fonts/RedHatDisplay-VariableFont_wght.ttf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: Exo2;
   src: url(/fonts/Exo2-VariableFont_wght.ttf) format("truetype");
+  font-display: auto;
 }
 @font-face {
   font-family: PTSans;
   src: url(/fonts/PTSans-Regular.ttf) format("truetype");
+  font-display: auto;
 }
