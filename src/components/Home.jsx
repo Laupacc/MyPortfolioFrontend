@@ -1,12 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Fade from "react-reveal/Fade";
 import Sidebar from "../components/Sidebar";
-import {
-  CirclesWithBarm,
-  DNA,
-  RotatingTriangles,
-  Watch,
-} from "react-loader-spinner";
+import { DNA, RotatingTriangles } from "react-loader-spinner";
 import { useEffect, useState } from "react";
 
 function Home() {
