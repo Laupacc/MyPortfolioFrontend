@@ -9,8 +9,7 @@ function App({ Component, pageProps }) {
       <Head>
         <title>Laura Paccanari</title>
         <link rel="icon" href="assets/images/favicon.ico" />
-        {/* <html lang="en" />
-        <meta name="description" content="Laura Paccanari's portfolio" /> */}
+        <meta name="description" content="Laura Paccanari's portfolio" />
       </Head>
       <Component {...pageProps} />
       <Background />
