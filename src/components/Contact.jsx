@@ -47,7 +47,7 @@ function Contact() {
   return (
     <div>
       <main className={styles.main}>
-      <Sidebar />
+        <Sidebar />
         <div className={styles.container}>
           <Fade right>
             <div className={styles.formwrapper}>

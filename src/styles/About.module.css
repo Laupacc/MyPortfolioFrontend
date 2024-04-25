@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   color: #f05334;
-  margin-top: 6rem;
+  margin-top: 7rem;
   font-size: 4em;
 }
 .wavy span {
@@ -144,66 +144,17 @@
   -moz-transform: rotateX(-90deg) translateZ(100px);
 }
 
-/* Media queries for smaller screens */
-@media screen and (max-width: 576px) {
-  .container {
-    max-width: 90%;
-  }
-
-  .aboutText {
-    font-size: 1.2em;
-    margin-bottom: 2rem;
-  }
-
-  .wavy {
-    margin-top: 2rem;
-    font-size: 2.5em;
-  }
-
+@media screen and (max-width: 768px) {
   .stageCubeCont {
-    max-width: 200px;
+    margin-bottom: 3rem;
+  }
+  .aboutText {
+    font-size: 1.2rem;
+  }
+  .wavy span {
+    font-size: 3rem;
+  }
+  .container {
+    max-width: 40%;
   }
 }
-
-/* Media queries for medium-sized screens */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .container {
-    max-width: 80%;
-  }
-
-  .aboutText {
-    font-size: 1.8em;
-    margin-bottom: 4rem;
-  }
-
-  .wavy {
-    margin-top: 4rem;
-    font-size: 3em;
-  }
-
-  .stageCubeCont {
-    max-width: 250px;
-  }
-}
-
-/* Media queries for large screens */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .container {
-    max-width: 70%;
-  }
-
-  .aboutText {
-    font-size: 2em;
-    margin-bottom: 5rem;
-  }
-
-  .wavy {
-    margin-top: 5rem;
-    font-size: 4em;
-  }
-
-  .stageCubeCont {
-    max-width: 300px;
-  }
-}
-

@@ -57,6 +57,11 @@
   .main {
     align-items: flex-start;
     padding: 1em;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 5%;
+    left: 0;
+    margin-right: 3%;
+    margin-left: 3%;
   }
 
   .navWrapper {
@@ -65,14 +70,18 @@
   }
 
   .linkWrapper {
-    margin: 0.5em 0;
+    margin: 0;
   }
 
   .link {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .icon {
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .line {
+    visibility: hidden;
   }
 }

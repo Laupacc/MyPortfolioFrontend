@@ -7,7 +7,6 @@
 }
 .container {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -122,6 +121,38 @@
   background-color: #dfdfdf;
   border: black;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .topbuttons {
+    width: 8rem;
+    height: 2rem;
+  }
+  .buttonContainer {
+    position: fixed;
+    top: 8rem;
+    left: 5rem;
+  }
+  .phoneContainer {
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+  .phoneContainer .content {
+    margin-top: -15rem;
+  }
+  .phonecard {
+    margin-left: -8rem;
+  }
+  .webContainer {
+    margin-top: 1rem;
+  }
+  .webcard {
+    margin-right: -16rem;
+    margin-left: -16rem;
+  }
+  .webContainer .content {
+    margin-top: -12rem;
+  }
 }
 
 /* .containerphone {

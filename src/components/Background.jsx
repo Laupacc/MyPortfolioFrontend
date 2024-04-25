@@ -1,9 +1,5 @@
 import styles from "../styles/Background.module.css";
-import Link from "next/link";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import particlesOptions from "../data/particles.json";

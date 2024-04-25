@@ -1,6 +1,6 @@
 import styles from "../styles/Resume.module.css";
 import Link from "next/link";
-import { FcNews, FcSurvey, FcRules, FcDocument } from "react-icons/fc";
+import { FcNews } from "react-icons/fc";
 
 function Resume() {
   const ResumePDF = "/laurapaccanariCVEng.pdf";

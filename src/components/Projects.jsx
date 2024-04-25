@@ -1,14 +1,27 @@
 import styles from "../styles/Projects.module.css";
 import Fade from "react-reveal/Fade";
-import Button from "@mui/material/Button";
 import projectsData from "../data/projectsData.json";
 import { DeviceFrameset } from "react-device-frameset";
 import "react-device-frameset/styles/marvel-devices.min.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 
 function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("WEB");
+  const [zoomSize, setZoomSize] = useState("50%");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setZoomSize("40%");
+      } else {
+        setZoomSize("50%");
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <main className={styles.main}>
@@ -35,7 +48,7 @@ function Projects() {
                   <div className={styles.webcard}>
                     <DeviceFrameset
                       device="MacBook Pro"
-                      zoom={"50%"}
+                      zoom={zoomSize}
                       key={project.id}
                     >
                       <iframe
@@ -70,7 +83,7 @@ function Projects() {
               <div className={styles.phoneContainer}>
                 {projectsData.phoneProjects.map((project) => (
                   <div className={styles.phonecard} key={project.id}>
-                    <DeviceFrameset device="iPhone X" zoom={"60%"}>
+                    <DeviceFrameset device="iPhone X" zoom={zoomSize}>
                       <img
                         src={project.imageUrl}
                         width="100%"

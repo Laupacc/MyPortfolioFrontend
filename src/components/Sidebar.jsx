@@ -1,11 +1,6 @@
 import styles from "../styles/Sidebar.module.css";
 import * as React from "react";
-import { Typography } from "@material-ui/core";
 import { useRouter } from "next/router";
-import { GiHomeGarage } from "react-icons/gi";
-import { BsInfoSquareFill, BsPersonRaisedHand } from "react-icons/bs";
-import { LuPalmtree } from "react-icons/lu";
-import { TbMessageCode } from "react-icons/tb";
 import { PiPersonArmsSpread } from "react-icons/pi";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { IoCodeWorkingSharp } from "react-icons/io5";

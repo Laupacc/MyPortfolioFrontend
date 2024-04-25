@@ -30,7 +30,7 @@
   border-radius: 16px;
   box-shadow: 0 6px 80px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(211, 189, 189, 0.51);
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255);
   width: 500px;
   height: 500px;
   padding: 2%;
@@ -56,4 +56,22 @@
     0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transform: translateY(0.5em);
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .formwrapper {
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+  }
 }

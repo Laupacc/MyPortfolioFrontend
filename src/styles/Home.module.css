@@ -22,31 +22,6 @@
   margin-top: 4rem;
 }
 
-/* .text {
-  font-size: 4em;
-  color: #f05334;
-  padding-bottom: 30%;
-  display: flex;
-}
-.wordWrapper:hover {
-  color: #e77e69;
-  transition: all 0.3s ease;
-  animation: bounce 0.3s ease;
-  cursor: pointer;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
-
 .wavy {
   display: flex;
   justify-content: center;
@@ -66,5 +41,30 @@
   0%,
   80% {
     transform: rotateY(360deg);
+  }
+}
+
+.dnaWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  right: 10rem;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .dnaWrapper {
+    right: 1rem;
+  }
+  .maintext {
+    font-size: 2em;
+  }
+
+  .wavy {
+    margin-top: 0;
+  }
+  .wavy span {
+    font-size: 3em;
   }
 }

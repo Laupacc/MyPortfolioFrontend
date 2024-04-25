@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "SpaceGrotesk", sans-serif;
+  font-family: "PTSans", sans-serif;
 }
 
 * {
@@ -19,4 +19,16 @@ body {
 @font-face {
   font-family: SpaceGrotesk;
   src: url(/fonts/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(/fonts/RedHatDisplay-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: Exo2;
+  src: url(/fonts/Exo2-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: PTSans;
+  src: url(/fonts/PTSans-Regular.ttf) format("truetype");
 }

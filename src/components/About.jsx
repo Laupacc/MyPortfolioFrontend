@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   faCss3,
   faGitAlt,
@@ -10,7 +9,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/About.module.css";
 import Fade from "react-reveal/Fade";
-import ReactTextTransition from "react-text-transition";
 import Sidebar from "./Sidebar";
 
 function About() {
