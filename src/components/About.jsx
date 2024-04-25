@@ -1,15 +1,14 @@
-import {
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
-  faNode,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/About.module.css";
 import Fade from "react-reveal/Fade";
 import Sidebar from "./Sidebar";
+import {
+  FaNode,
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaJsSquare,
+  FaGitAlt,
+} from "react-icons/fa";
 
 function About() {
   return (
@@ -36,22 +35,22 @@ function About() {
             <div className={styles.stageCubeCont}>
               <div className={styles.cubeSpinner}>
                 <div className={styles.face1}>
-                  <FontAwesomeIcon icon={faNode} color="#4B8BBE" />
+                  <FaNode color="#4B8BBE" size={160} />
                 </div>
                 <div className={styles.face2}>
-                  <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                  <FaHtml5 color="#F06529" size={160} />
                 </div>
                 <div className={styles.face3}>
-                  <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                  <FaCss3 color="#28A4D9" size={160} />
                 </div>
                 <div className={styles.face4}>
-                  <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                  <FaReact color="#5ED4F4" size={160} />
                 </div>
                 <div className={styles.face5}>
-                  <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                  <FaJsSquare color="#EFD81D" size={160} />
                 </div>
                 <div className={styles.face6}>
-                  <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                  <FaGitAlt color="#EC4D28" size={160} />
                 </div>
               </div>
             </div>
