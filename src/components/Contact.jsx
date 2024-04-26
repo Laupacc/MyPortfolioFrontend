@@ -52,40 +52,32 @@ function Contact() {
           <Fade right>
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
-                <TextField
+                <input
                   required
-                  id="outlined-name-input"
                   label="Name"
                   type="text"
-                  size="normal"
-                  variant="filled"
                   name="name"
-                  margin="dense"
+                  autocomplete="on"
+                  placeholder="Name"
                   className={styles.formfield}
                 />
-                <TextField
+                <input
                   required
-                  id="outlined-email-input"
                   label="Email"
                   type="email"
-                  size="normal"
-                  variant="filled"
                   name="email"
-                  margin="dense"
+                  autocomplete="on"
+                  placeholder="Email"
                   className={styles.formfield}
                 />
-                <TextField
+                <textarea
                   required
-                  id="outlined-text-input"
                   label="Message"
-                  type="textarea"
-                  size="normal"
-                  multiline
-                  minRows={5}
-                  variant="filled"
                   name="message"
-                  margin="dense"
+                  autoComplete="on"
+                  placeholder="Message"
                   className={styles.formfield}
+                  rows="5"
                 />
                 <button type="submit" value="Send" className={styles.submitBtn}>
                   <span component="span">Send me a message</span>

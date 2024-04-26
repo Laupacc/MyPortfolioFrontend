@@ -12,7 +12,7 @@ function Projects() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 950) {
         setZoomSize("40%");
       } else {
         setZoomSize("50%");

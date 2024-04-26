@@ -14,6 +14,18 @@
 
 .formfield {
   width: 100%;
+  margin: 1em;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  font-family: Pt Sans, sans-serif;
+}
+
+.formfield:focus {
+  border-color: #f05334;
 }
 
 .container {
@@ -28,7 +40,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: 16px;
-  box-shadow: 0 6px 80px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 80px rgba(0, 0, 0, 0.4);
   border: 2px solid rgba(211, 189, 189, 0.51);
   background-color: rgb(255, 255, 255);
   width: 500px;
@@ -39,6 +51,7 @@
 .submitBtn {
   background-color: #f05334;
   color: white;
+  font-family: Pt Sans, sans-serif;
   padding: 1em;
   font-size: 1em;
   cursor: pointer;
@@ -58,13 +71,9 @@
   transform: translateY(0.5em);
 }
 
-
 @media screen and (max-width: 768px) {
   .container {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
     margin-right: 3%;
     margin-left: 3%;
   }

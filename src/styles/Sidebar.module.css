@@ -56,12 +56,11 @@
 @media only screen and (max-width: 768px) {
   .main {
     align-items: flex-start;
-    padding: 1em;
     background-color: rgb(255, 255, 255, 0.9);
     border-radius: 5%;
-    left: 0;
+    right: 0;
     margin-right: 3%;
-    margin-left: 3%;
+    margin-top: 3%;
   }
 
   .navWrapper {
