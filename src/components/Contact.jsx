@@ -57,7 +57,6 @@ function Contact() {
                   label="Name"
                   type="text"
                   name="name"
-                  autocomplete="on"
                   placeholder="Name"
                   className={styles.formfield}
                 />
@@ -66,7 +65,7 @@ function Contact() {
                   label="Email"
                   type="email"
                   name="email"
-                  autocomplete="on"
+                  autoComplete="on"
                   placeholder="Email"
                   className={styles.formfield}
                 />

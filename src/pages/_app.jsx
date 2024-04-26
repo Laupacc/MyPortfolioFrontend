@@ -10,6 +10,7 @@ function App({ Component, pageProps }) {
         <title>Laura Paccanari</title>
         <link rel="icon" href="assets/images/favicon.ico" />
         <meta name="description" content="Laura Paccanari's portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
       <Background />

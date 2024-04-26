@@ -12,7 +12,7 @@ function Projects() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 950) {
+      if (window.innerWidth < 768) {
         setZoomSize("40%");
       } else {
         setZoomSize("50%");
@@ -45,22 +45,13 @@ function Projects() {
             {selectedCategory === "WEB" && (
               <div className={styles.webContainer}>
                 {projectsData.webProjects.map((project) => (
-                  <div className={styles.webcard}>
-                    <DeviceFrameset
-                      device="MacBook Pro"
-                      zoom={zoomSize}
-                      key={project.id}
-                    >
+                  <div className={styles.webcard} key={project.id}>
+                    <DeviceFrameset device="MacBook Pro" zoom={zoomSize}>
                       <iframe
                         src={project.demoLink}
                         width="100%"
                         height="100%"
                       />
-                      {/* <img
-                        className={styles.imageUrl}
-                        src={project.imageUrl}
-                        alt={project.title}
-                      /> */}
                     </DeviceFrameset>
 
                     <div className={styles.content}>

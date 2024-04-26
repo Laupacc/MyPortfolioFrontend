@@ -1,19 +1,19 @@
 import styles from "../styles/Resume.module.css";
 import Link from "next/link";
-import { FcNews } from "react-icons/fc";
+import { FcNews, FcDocument } from "react-icons/fc";
+import { IoDocumentText } from "react-icons/io5";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
-import IconButton from "@mui/material/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
 
 function Resume() {
   const ResumePDF = "/laurapaccanariCVEng.pdf";
 
   const actions = [
-    { icon: <FcNews size={40} />, name: "My Resume", url: ResumePDF },
+    { icon: <IoDocumentText size={40} />, name: "My Resume", url: ResumePDF },
     {
       icon: <FaLinkedin size={40} />,
       name: "LinkedIn",
@@ -28,7 +28,7 @@ function Resume() {
 
   const useStyles = makeStyles((theme) => ({
     iconColor: {
-      color: "#f05334",
+      color: "#3765C0",
       width: "3rem",
       height: "3rem",
     },
