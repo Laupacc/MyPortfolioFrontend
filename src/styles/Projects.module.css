@@ -95,14 +95,23 @@
   background-color: #f05334;
   color: white;
   border: none;
-  border-radius: 0.5rem;
   text-decoration: none;
   cursor: pointer;
+  font-family: Pt Sans, sans-serif;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .button:hover {
-  background-color: #dfdfdf;
-  border: black;
-  color: black;
+  background-color: #db6c56;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.5em);
 }
 .topbuttons {
   display: flex;
@@ -113,73 +122,76 @@
   height: 3rem;
   background-color: #f05334;
   color: white;
-  border: none;
-  border-radius: 0.5rem;
   text-decoration: none;
   cursor: pointer;
+  font-family: Pt Sans, sans-serif;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .topbuttons:hover {
-  background-color: #dfdfdf;
-  border: black;
-  color: black;
+  background-color: #db6c56;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.5em);
 }
 
-@media screen and (max-width: 768px) {
-  .topbuttons {
-    width: 8rem;
-    height: 2rem;
-  }
-  .buttonContainer {
-    position: fixed;
-    top: 8rem;
-    left: 5rem;
-  }
-  .phoneContainer {
-    margin-top: 0;
-    margin-left: 5rem;
-  }
-  .phoneContainer .content {
-    margin-top: -15rem;
-  }
-  .phonecard {
-    margin-left: -8rem;
-  }
-  .webContainer {
-    margin-top: 1rem;
-  }
-  .webcard {
-    margin-right: -16rem;
-    margin-left: -16rem;
-  }
-  .webContainer .content {
-    margin-top: -12rem;
-  }
-}
-
-/* .containerphone {
+/* Small Phone */
+.containerphone {
   height: 50vh;
-  margin: 10vh auto;
-  width: auto;
+  margin-top: 28vh;
+  display: flex;
+  flex-direction: column;
 }
+
 .phone,
 .phone img {
   height: 100%;
 }
 .phone {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 12rem;
 }
 .phone img {
   display: block;
   border: 1.334vh solid #111;
   border-radius: 4.5vh;
-}  */
-/* 
+}
+
+.smallContentPhone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  padding: 0.5rem;
+}
+
+/* Small computer */
 .computer {
-  padding: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .monitor {
-  width: 515px;
-  height: 300px;
+  width: 315px;
+  height: 200px;
   overflow-y: scroll;
   border: solid 1em #333;
   border-radius: 0.5em;
@@ -192,10 +204,10 @@
   display: block;
   position: relative;
   background: #222;
-  width: 150px;
+  width: 100px;
   height: 50px;
-  top: 350px;
-  left: 185px;
+  top: 249px;
+  left: 105px;
 }
 .stand:after {
   content: "";
@@ -206,6 +218,51 @@
   border-top-right-radius: 0.5em;
   width: 300px;
   height: 15px;
-  top: 50px;
-  left: 110px;
-}  */
+  top: 48px;
+  left: 10px;
+}
+
+.containerweb {
+  margin-top: 18vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.smallContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .topbuttons {
+    width: 8rem;
+    height: 2rem;
+  }
+  .buttonContainer {
+    position: fixed;
+    top: 7rem;
+    left: 3rem;
+  }
+  .webOnly {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileOnly {
+    display: none;
+  }
+}

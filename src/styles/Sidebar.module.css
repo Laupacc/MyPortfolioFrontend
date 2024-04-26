@@ -56,7 +56,7 @@
 @media only screen and (max-width: 768px) {
   .main {
     align-items: flex-start;
-    background-color: rgb(255, 255, 255, 0.9);
+    /* background-color: rgb(255, 255, 255, 0.9); */
     border-radius: 5%;
     right: 0;
     margin-right: 3%;
@@ -81,6 +81,6 @@
     margin: 0;
   }
   .line {
-    visibility: hidden;
+    display: none;
   }
 }
