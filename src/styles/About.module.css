@@ -18,7 +18,7 @@
 .aboutText {
   font-size: 1.8em;
   color: #f05334;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
 
@@ -142,9 +142,13 @@
   }
   .aboutText {
     font-size: 1.2rem;
+    margin-top: 0;
   }
   .wavy span {
     font-size: 3rem;
+  }
+  .wavy {
+    margin-top: 5.5rem;
   }
   .container {
     max-width: 40%;

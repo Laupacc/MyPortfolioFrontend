@@ -34,6 +34,7 @@
 }
 
 .menutext {
+  font-weight: bold;
   visibility: hidden;
 }
 
@@ -65,11 +66,12 @@
 
   .navWrapper {
     align-items: flex-start;
-    margin-right: 0;
+    margin: 0;
   }
 
   .linkWrapper {
     margin: 0;
+    padding: 0.5rem;
   }
 
   .link {

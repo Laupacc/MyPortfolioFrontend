@@ -18,9 +18,9 @@
 @media screen and (max-width: 768px) {
   .languageSwitcher {
     justify-content: flex-end;
-    top: 4.8rem;
+    top: 4.3rem;
     left: auto;
-    right: 1.6rem;
+    right: 1rem;
   }
   .toggle {
     font-size: 2rem;

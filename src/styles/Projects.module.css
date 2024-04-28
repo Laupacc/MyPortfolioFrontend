@@ -144,7 +144,7 @@
 /* Small Phone */
 .containerphone {
   height: 50vh;
-  margin-top: 28vh;
+  margin-top: 45vh;
   display: flex;
   flex-direction: column;
 }
@@ -177,6 +177,7 @@
   border-radius: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-top: 1rem;
+  margin-bottom: 15rem;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
   padding: 0.5rem;
@@ -248,13 +249,13 @@
 
 @media screen and (max-width: 768px) {
   .topbuttons {
-    width: 8rem;
+    width: 10rem;
     height: 2rem;
   }
   .buttonContainer {
     position: fixed;
     top: 7rem;
-    left: 3rem;
+    left: 1rem;
   }
   .webOnly {
     display: none;
