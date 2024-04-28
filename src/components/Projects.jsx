@@ -1,17 +1,17 @@
 import styles from "../styles/Projects.module.css";
-import Fade from "react-reveal/Fade";
-import projectsDataFr from "../data/projectsDataFr.json";
+import Sidebar from "../components/Sidebar";
+import projectsDataFrench from "../data/projectsDataFrench.json";
 import projectsData from "../data/projectsData.json";
 import { DeviceFrameset } from "react-device-frameset";
+import Fade from "react-reveal/Fade";
 import "react-device-frameset/styles/marvel-devices.min.css";
 import { useState } from "react";
-import Sidebar from "../components/Sidebar";
 import { useTranslation } from "react-i18next";
 
 function Projects() {
   const { t, i18n } = useTranslation();
   const currentProjectsData =
-    i18n.language === "fr" ? projectsDataFr : projectsData;
+    i18n.language === "fr" ? projectsDataFrench : projectsData;
 
   const [selectedCategory, setSelectedCategory] = useState("WEB");
 
