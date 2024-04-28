@@ -4,7 +4,7 @@ import projectsDataFr from "../data/projectsDataFr.json";
 import projectsData from "../data/projectsData.json";
 import { DeviceFrameset } from "react-device-frameset";
 import "react-device-frameset/styles/marvel-devices.min.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import { useTranslation } from "react-i18next";
 
