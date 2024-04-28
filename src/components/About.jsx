@@ -1,6 +1,7 @@
 import styles from "../styles/About.module.css";
 import Fade from "react-reveal/Fade";
 import Sidebar from "./Sidebar";
+import { useTranslation } from "react-i18next";
 import {
   FaNode,
   FaHtml5,
@@ -11,6 +12,7 @@ import {
 } from "react-icons/fa";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <>
       <div className={styles.main}>
@@ -18,19 +20,13 @@ function About() {
         <Fade right>
           <div className={styles.container}>
             <div className={styles.wavy}>
-              <span style={{ "--i": 1 }}>A</span>
-              <span style={{ "--i": 2 }}>b</span>
-              <span style={{ "--i": 3 }}>o</span>
-              <span style={{ "--i": 4 }}>u</span>
-              <span style={{ "--i": 5 }}>t</span>
+              <span style={{ "--i": 1 }}>{t("about.title.1")}</span>
+              <span style={{ "--i": 2 }}>{t("about.title.2")}</span>
+              <span style={{ "--i": 3 }}>{t("about.title.3")}</span>
+              <span style={{ "--i": 4 }}>{t("about.title.4")}</span>
+              <span style={{ "--i": 5 }}>{t("about.title.5")}</span>
             </div>
-            <div className={styles.aboutText}>
-              I have a background in anthropology and project management,
-              co-founded a coffee store but now specialize in full-stack
-              development. Combining an enthusiasm for technology and a knack
-              for business, I approach each project with a fresh and distinctive
-              outlook.
-            </div>
+            <div className={styles.aboutText}>{t("about.description")}</div>
 
             <div className={styles.stageCubeCont}>
               <div className={styles.cubeSpinner}>

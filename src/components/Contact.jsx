@@ -5,6 +5,7 @@ import Fade from "react-reveal/Fade";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import Sidebar from "../components/Sidebar";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
   const form = useRef();
@@ -43,7 +44,7 @@ function Contact() {
         }
       );
   };
-
+  const { t } = useTranslation();
   return (
     <div>
       <main className={styles.main}>
@@ -57,16 +58,17 @@ function Contact() {
                   label="Name"
                   type="text"
                   name="name"
-                  placeholder="Name"
+                  placeholder={t("contact.name")}
                   className={styles.formfield}
                 />
+
                 <input
                   required
                   label="Email"
                   type="email"
                   name="email"
                   autoComplete="on"
-                  placeholder="Email"
+                  placeholder={t("contact.email")}
                   className={styles.formfield}
                 />
                 <textarea
@@ -74,12 +76,12 @@ function Contact() {
                   label="Message"
                   name="message"
                   autoComplete="on"
-                  placeholder="Message"
+                  placeholder={t("contact.message")}
                   className={styles.formfield}
                   rows="5"
                 />
                 <button type="submit" value="Send" className={styles.submitBtn}>
-                  <span component="span">Send me a message</span>
+                  <span component="span">{t("contact.send")}</span>
                 </button>
               </form>
             </div>

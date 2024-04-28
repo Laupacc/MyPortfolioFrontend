@@ -8,12 +8,21 @@ import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
 
 function Resume() {
   const ResumePDF = "/laurapaccanariCVEng.pdf";
+  const ResumePDFFr = "/laurapaccanariCVFr.pdf";
+
+  const { t, i18n } = useTranslation();
+  const currentResume = i18n.language === "fr" ? ResumePDFFr : ResumePDF;
 
   const actions = [
-    { icon: <IoDocumentText size={40} />, name: "My Resume", url: ResumePDF },
+    {
+      icon: <IoDocumentText size={40} />,
+      name: t("resume.resume"),
+      url: currentResume,
+    },
     {
       icon: <FaLinkedin size={40} />,
       name: "LinkedIn",

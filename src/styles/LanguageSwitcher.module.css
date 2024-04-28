@@ -1,0 +1,14 @@
+.languageSwitcher {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 30rem;
+  top: 1rem;
+  z-index: 999;
+}
+
+.toggle {
+  font-size: 2rem;
+  padding: 5px;
+}

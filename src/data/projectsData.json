@@ -2,22 +2,22 @@
   "webProjects": [
     {
       "id": 1,
-      "title": "My Movies",
-      "subtitle": "My Movies is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film",
-      "imageUrl": "https://i.imgur.com/oLOEoYv.png",
+      "title": "ScreenSeeker",
+      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film",
+      "imageUrl": "https://i.imgur.com/NWTgcue.png",
       "demoLink": "https://my-movies-frontend-six.vercel.app/"
     },
     {
       "id": 2,
-      "title": "Weather App",
+      "title": "WeatherApp",
       "subtitle": "I crafted a dynamic weather app from scratch, keeping users in the loop with accurate forecasts and live weather updates",
       "imageUrl": "https://i.imgur.com/VoIubdf.png",
       "demoLink": "https://weatherapp-frontend-red.vercel.app/"
     },
     {
       "id": 3,
-      "title": "Morning News",
-      "subtitle": "Stay informed from sunrise to sunset with this morning news app, your daily dose of headlines and updates",
+      "title": "NewsApp",
+      "subtitle": "Stay informed from sunrise to sunset with this news app, your daily dose of headlines and updates",
       "imageUrl": "https://i.imgur.com/SD7efJg.png",
       "demoLink": "https://morning-news-frontend-alpha.vercel.app/"
     },
@@ -51,7 +51,7 @@
     },
     {
       "id": 3,
-      "title": "Location App",
+      "title": "LocationApp",
       "subtitle": "Find your way around town and save your favourite places with this location app",
       "imageUrl": "https://i.imgur.com/CuUZrSc.png"
     }

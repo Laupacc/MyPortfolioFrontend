@@ -1,0 +1,44 @@
+{
+  "about": {
+    "title": {
+      "1": "A",
+      "2": "b",
+      "3": "o",
+      "4": "u",
+      "5": "t"
+    },
+    "description": "I have a background in anthropology and project management, co-founded a coffee store but now specialize in full-stack development. Combining an enthusiasm for technology and a knack for business, I approach each project with a fresh and distinctive outlook."
+  },
+  "sidebar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send me a message"
+  },
+  "home": {
+    "title": {
+      "1": "H",
+      "2": "e",
+      "3": "l",
+      "4": "l",
+      "5": "o"
+    },
+    "description": "I'm Laura, FullStack JavaScript Web & Mobile Developer."
+  },
+  "resume": {
+    "resume": "My Resume"
+  },
+  "projects": {
+    "btn": {
+      "web": "Web apps",
+      "mobile": "Mobile apps",
+      "toSite": "To website"
+    }
+  }
+}

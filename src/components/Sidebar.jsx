@@ -5,6 +5,7 @@ import { PiPersonArmsSpread } from "react-icons/pi";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { IoCodeWorkingSharp } from "react-icons/io5";
 import { TfiWrite } from "react-icons/tfi";
+import { useTranslation } from "react-i18next";
 
 function Sidebar() {
   const router = useRouter();
@@ -13,6 +14,8 @@ function Sidebar() {
     event.preventDefault();
     router.push(path);
   };
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -35,7 +38,7 @@ function Sidebar() {
                   styles.activeText
                 }`}
               >
-                Home
+                {t("sidebar.home")}
               </div>
             </a>
           </div>
@@ -54,7 +57,7 @@ function Sidebar() {
                   router.pathname === "/about" && styles.activeText
                 }`}
               >
-                About
+                {t("sidebar.about")}
               </div>
             </a>
           </div>
@@ -73,7 +76,7 @@ function Sidebar() {
                   router.pathname === "/projects" && styles.activeText
                 }`}
               >
-                Projects
+                {t("sidebar.projects")}
               </div>
             </a>
           </div>
@@ -92,7 +95,7 @@ function Sidebar() {
                   router.pathname === "/contact" && styles.activeText
                 }`}
               >
-                Contact
+                {t("sidebar.contact")}
               </div>
             </a>
           </div>
