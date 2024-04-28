@@ -111,7 +111,7 @@ function Projects() {
                         href={project.demoLink}
                         target="_blank"
                       >
-                        Demo
+                        {t("projects.btn.toSite")}
                       </a>
                     </div>
                   </div>

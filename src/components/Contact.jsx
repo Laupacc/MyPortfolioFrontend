@@ -26,7 +26,7 @@ function Contact() {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Thank you for your email",
+            title: t("contact.success"),
             showConfirmButton: false,
             timer: 2500,
           });
@@ -37,7 +37,7 @@ function Contact() {
           Swal.fire({
             position: "center",
             icon: "error",
-            title: "There was an error submitting your message",
+            title: t("contact.error"),
             showConfirmButton: false,
             timer: 2500,
           });

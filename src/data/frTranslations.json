@@ -19,7 +19,9 @@
     "name": "Nom",
     "email": "Email",
     "message": "Message",
-    "send": "Envoyez-moi un message"
+    "send": "Envoyez-moi un message",
+    "success": "Merci pour votre message",
+    "error": "Il y a eu une erreur lors de l'envoi de votre message"
   },
   "home": {
     "title": {
