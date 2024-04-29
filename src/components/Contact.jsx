@@ -61,7 +61,6 @@ function Contact() {
                   placeholder={t("contact.name")}
                   className={styles.formfield}
                 />
-
                 <input
                   required
                   label="Email"
@@ -80,8 +79,15 @@ function Contact() {
                   className={styles.formfield}
                   rows="5"
                 />
-                <button type="submit" value="Send" className={styles.submitBtn}>
+                {/* <button type="submit" value="Send" className={styles.submitBtn}>
                   <span component="span">{t("contact.send")}</span>
+                </button> */}
+                <button className={styles.submitBtn_pushable}>
+                  <span className={styles.submitBtn_shadow}></span>
+                  <span className={styles.submitBtn_edge}></span>
+                  <span className={styles.submitBtn_front}>
+                    {t("contact.send")}
+                  </span>
                 </button>
               </form>
             </div>

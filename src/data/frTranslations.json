@@ -31,16 +31,16 @@
       "4": "u",
       "5": "t"
     },
-    "description": "Je m'appelle Laura, je suis développeur web et mobile full-stack JavaScript."
+    "description": "Je m'appelle Laura, je suis Développeur Web & Mobile Full-Stack JavaScript."
   },
   "resume": {
     "resume": "Mon CV"
   },
   "projects": {
     "btn": {
-      "web": "Applications web",
-      "mobile": "Applications mobiles",
-      "toSite": "Voir le site"
+      "web": "Apps web",
+      "mobile": "Apps mobiles",
+      "toSite": "Vers site"
     }
   }
 }

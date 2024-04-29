@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import "react-device-frameset/styles/marvel-devices.min.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Button } from "@mui/material";
 
 function Projects() {
   const { t, i18n } = useTranslation();
@@ -21,18 +22,38 @@ function Projects() {
         <Sidebar />
         <Fade right>
           <div className={styles.buttonContainer}>
-            <a
+            <button
+              className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
+              onClick={() => setSelectedCategory("WEB")}
+            >
+              <span className={styles.submitBtn_shadow}></span>
+              <span className={styles.submitBtn_edge}></span>
+              <span className={styles.submitBtn_front}>
+                {t("projects.btn.web")}
+              </span>
+            </button>
+            <button
+              className={styles.submitBtn_pushable}
+              onClick={() => setSelectedCategory("MOBILE")}
+            >
+              <span className={styles.submitBtn_shadow}></span>
+              <span className={styles.submitBtn_edge}></span>
+              <span className={styles.submitBtn_front}>
+                {t("projects.btn.mobile")}
+              </span>
+            </button>
+            {/* <a
               className={styles.topbuttons}
               onClick={() => setSelectedCategory("WEB")}
             >
               {t("projects.btn.web")}
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className={styles.topbuttons}
               onClick={() => setSelectedCategory("MOBILE")}
             >
               {t("projects.btn.mobile")}
-            </a>
+            </a> */}
           </div>
           <div className={styles.webOnly}>
             <div className={styles.container}>
@@ -53,13 +74,26 @@ function Projects() {
                         <div className={styles.subtitle}>
                           {project.subtitle}
                         </div>
-                        <a
+                        <div className={styles.button}>
+                          <Button
+                            href={project.demoLink}
+                            target="_blank"
+                            className={styles.submitBtn_pushable}
+                          >
+                            <span className={styles.submitBtn_shadow}></span>
+                            <span className={styles.submitBtn_edge}></span>
+                            <span className={styles.submitBtn_front}>
+                              {t("projects.btn.toSite")}
+                            </span>
+                          </Button>
+                        </div>
+                        {/* <a
                           className={styles.button}
                           href={project.demoLink}
                           target="_blank"
                         >
                           {t("projects.btn.toSite")}
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   ))}
@@ -106,13 +140,26 @@ function Projects() {
                     <div className={styles.smallContent}>
                       <div className={styles.title}>{project.title}</div>
                       <div className={styles.subtitle}>{project.subtitle}</div>
-                      <a
+                      <div className={styles.button}>
+                        <Button
+                          className={styles.submitBtn_pushable}
+                          href={project.demoLink}
+                          target="_blank"
+                        >
+                          <span className={styles.submitBtn_shadow}></span>
+                          <span className={styles.submitBtn_edge}></span>
+                          <span className={styles.submitBtn_front}>
+                            {t("projects.btn.toSite")}
+                          </span>
+                        </Button>
+                      </div>
+                      {/* <a
                         className={styles.button}
                         href={project.demoLink}
                         target="_blank"
                       >
                         {t("projects.btn.toSite")}
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 ))}
