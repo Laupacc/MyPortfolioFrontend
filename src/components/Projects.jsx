@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import Sidebar from "../components/Sidebar";
 import projectsDataFrench from "../data/projectsDataFrench.json";
 import projectsData from "../data/projectsData.json";
 import { DeviceFrameset } from "react-device-frameset";
@@ -19,7 +18,6 @@ function Projects() {
   return (
     <>
       <main className={styles.main}>
-        <Sidebar />
         <Fade right>
           <div className={styles.buttonContainer}>
             <button
@@ -33,7 +31,7 @@ function Projects() {
               </span>
             </button>
             <button
-              className={styles.submitBtn_pushable}
+              className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
               onClick={() => setSelectedCategory("MOBILE")}
             >
               <span className={styles.submitBtn_shadow}></span>
@@ -42,19 +40,8 @@ function Projects() {
                 {t("projects.btn.mobile")}
               </span>
             </button>
-            {/* <a
-              className={styles.topbuttons}
-              onClick={() => setSelectedCategory("WEB")}
-            >
-              {t("projects.btn.web")}
-            </a> */}
-            {/* <a
-              className={styles.topbuttons}
-              onClick={() => setSelectedCategory("MOBILE")}
-            >
-              {t("projects.btn.mobile")}
-            </a> */}
           </div>
+
           <div className={styles.webOnly}>
             <div className={styles.container}>
               {selectedCategory === "WEB" && (

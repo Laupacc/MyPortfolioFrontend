@@ -1,6 +1,5 @@
 import styles from "../styles/About.module.css";
 import Fade from "react-reveal/Fade";
-import Sidebar from "./Sidebar";
 import { useTranslation } from "react-i18next";
 import {
   FaNode,
@@ -16,7 +15,6 @@ function About() {
   return (
     <>
       <div className={styles.main}>
-        <Sidebar />
         <Fade right>
           <div className={styles.container}>
             <div className={styles.wavy}>

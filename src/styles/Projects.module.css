@@ -5,6 +5,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.mobileOnly {
+  overflow-y: auto;
+  max-height: calc(100vh - 11.5rem);
+  margin-top: 11.5rem;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -86,7 +92,7 @@
   align-items: center;
   position: fixed;
   top: 4rem;
-  left: 100px;
+  left: 6rem;
   z-index: 999;
 }
 .button {
@@ -148,7 +154,7 @@
 /* Small Phone */
 .containerphone {
   height: 50vh;
-  margin-top: 50vh;
+  margin-top: 36vh;
   display: flex;
   flex-direction: column;
 }
@@ -228,7 +234,6 @@
 }
 
 .containerweb {
-  margin-top: 18vh;
   margin-bottom: 10vh;
   display: flex;
   justify-content: center;
@@ -252,16 +257,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .buttonContainer {
-    justify-content: center;
-    top: 7rem;
-    left: 4rem;
-  }
   .webOnly {
     display: none;
   }
-  .topBtn {
-    padding: 2rem;
+  .buttonContainer {
+    top: 6.8rem;
+    left: 2rem;
+    right: 2rem;
   }
 }
 

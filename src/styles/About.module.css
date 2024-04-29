@@ -10,10 +10,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin: 3%;
+  margin-right: 3%;
   text-align: right;
   max-width: 30%;
+  /* overflow-y: auto;
+  max-height: calc(100vh - 5rem);
+  margin-top: 5rem; */
 }
+
 
 .aboutText {
   font-size: 1.8em;
@@ -138,7 +142,7 @@
 
 @media screen and (max-width: 768px) {
   .stageCubeCont {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
   .aboutText {
     font-size: 1.2rem;

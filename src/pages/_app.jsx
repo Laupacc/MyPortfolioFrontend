@@ -8,6 +8,7 @@ import i18next from "i18next";
 
 import enTranslations from "../data/enTranslations.json";
 import frTranslations from "../data/frTranslations.json";
+import Sidebar from "../components/Sidebar";
 
 i18next
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -39,6 +40,7 @@ function App({ Component, pageProps }) {
       <Background />
       <Resume />
       <LanguageSwitcher />
+      <Sidebar />
     </>
   );
 }

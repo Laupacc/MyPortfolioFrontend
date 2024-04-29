@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css";
 import Fade from "react-reveal/Fade";
-import Sidebar from "../components/Sidebar";
 import { DNA, RotatingTriangles } from "react-loader-spinner";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -19,7 +18,6 @@ function Home() {
 
   return (
     <>
-      <Sidebar />
       {loading ? (
         <DNA
           visible={true}
