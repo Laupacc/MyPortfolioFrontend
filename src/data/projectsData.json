@@ -3,28 +3,28 @@
     {
       "id": 1,
       "title": "ScreenSeeker",
-      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film",
+      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film.",
       "imageUrl": "https://i.imgur.com/NWTgcue.png",
       "demoLink": "https://my-movies-frontend-six.vercel.app/"
     },
     {
       "id": 2,
       "title": "WeatherApp",
-      "subtitle": "I crafted a dynamic weather app from scratch, keeping users in the loop with accurate forecasts and live weather updates",
+      "subtitle": "This straightforward weather app keeps users in the loop with accurate forecasts, real-time weather updates, and user-friendly interface.",
       "imageUrl": "https://i.imgur.com/VoIubdf.png",
       "demoLink": "https://weatherapp-frontend-red.vercel.app/"
     },
     {
       "id": 3,
       "title": "NewsApp",
-      "subtitle": "Stay informed from sunrise to sunset with this news app, your daily dose of headlines and updates",
+      "subtitle": "Stay updated with the latest headlines and create a personalized experience by signing up and bookmarking your favorite articles",
       "imageUrl": "https://i.imgur.com/SD7efJg.png",
       "demoLink": "https://morning-news-frontend-alpha.vercel.app/"
     },
     {
       "id": 4,
       "title": "Memory Game",
-      "subtitle": "It's a cool memory game where you have to match the cards. It's a fun way to test your memory skills",
+      "subtitle": "It's a cool memory game where you flip the cards and match them. It's a fun way to test your memory skills and muscle up your brain.",
       "imageUrl": "https://i.imgur.com/eDRTQG6.png",
       "demoLink": "https://memory-game-frontend-neon.vercel.app"
     },
@@ -40,19 +40,19 @@
     {
       "id": 1,
       "title": "GiftEase",
-      "subtitle": "Create and share wishlists with friends and family, and never miss a special occasion again",
+      "subtitle": "Create and share wishlists with friends and family, and never miss a special occasion again.",
       "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
     },
     {
       "id": 2,
       "title": "FoodApp",
-      "subtitle": "Discover new culinary delights and save your favorite recipes with the innovative food app",
+      "subtitle": "Discover new culinary delights and save your favorite recipes with the innovative food app.",
       "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
       "id": 3,
       "title": "LocationApp",
-      "subtitle": "Find your way around town and save your favourite places with this location app",
+      "subtitle": "Find your way around town and save your favourite places with this location app.",
       "imageUrl": "https://i.imgur.com/CuUZrSc.png"
     }
   ]

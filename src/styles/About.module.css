@@ -1,8 +1,10 @@
 .main {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   min-height: 100vh;
+  width: auto;
 }
 
 .container {
@@ -13,17 +15,18 @@
   margin-right: 3%;
   text-align: right;
   max-width: 30%;
-  /* overflow-y: auto;
-  max-height: calc(100vh - 5rem);
-  margin-top: 5rem; */
-}
+  margin-top: 5rem;
 
+  /* overflow: auto;
+  max-height: calc(100vh - 5rem); */
+}
 
 .aboutText {
   font-size: 1.8em;
   color: #f05334;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
 .wavy {
@@ -31,7 +34,6 @@
   justify-content: center;
   align-items: center;
   color: #f05334;
-  margin-top: 7rem;
   font-size: 4em;
 }
 .wavy span {
@@ -150,9 +152,6 @@
   }
   .wavy span {
     font-size: 3rem;
-  }
-  .wavy {
-    margin-top: 5.5rem;
   }
   .container {
     max-width: 40%;

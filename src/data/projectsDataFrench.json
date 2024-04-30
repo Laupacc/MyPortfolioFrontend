@@ -3,35 +3,35 @@
     {
       "id": 1,
       "title": "ScreenSeeker",
-      "subtitle": "ScreenSeeker est un site web où vous pouvez consulter les sorties de films et de séries télévisées, créer une liste de souhaits, suivre les vues et noter chaque film",
+      "subtitle": "ScreenSeeker est un site web où vous pouvez consulter les dernières sorties de films et de séries, créer une liste de souhaits et noter chaque film.",
       "imageUrl": "https://i.imgur.com/NWTgcue.png",
       "demoLink": "https://my-movies-frontend-six.vercel.app/"
     },
     {
       "id": 2,
       "title": "WeatherApp",
-      "subtitle": "J'ai conçu une application météo dynamique à partir de zéro, tenant les utilisateurs informés avec des prévisions précises et des mises à jour météorologiques en direct",
+      "subtitle": "C'est une application météo permettant de vous informé avec des prévisions précises et des mises à jour en temps réel.",
       "imageUrl": "https://i.imgur.com/VoIubdf.png",
       "demoLink": "https://weatherapp-frontend-red.vercel.app/"
     },
     {
       "id": 3,
       "title": "NewsApp",
-      "subtitle": "Restez informé du lever au coucher du soleil avec cette application d'actualités, votre dose quotidienne de titres et de mises à jour",
+      "subtitle": "Restez à jour avec les derniers titres et créez une expérience personnalisée en vous inscrivant et en mettant en favori vos articles préférés.",
       "imageUrl": "https://i.imgur.com/SD7efJg.png",
       "demoLink": "https://morning-news-frontend-alpha.vercel.app/"
     },
     {
       "id": 4,
       "title": "Memory Game",
-      "subtitle": "C'est un jeu de mémoire amusant où vous devez faire correspondre les cartes. C'est une façon amusante de tester vos compétences en mémoire",
+      "subtitle": "C'est un jeu de mémoire où vous retournez les cartes et les associez. C'est une façon amusante de tester vos compétences en matière de mémoire.",
       "imageUrl": "https://i.imgur.com/eDRTQG6.png",
       "demoLink": "https://memory-game-frontend-neon.vercel.app"
     },
     {
       "id": 5,
       "title": "Hackatweet",
-      "subtitle": "Hackatweet est un clone de Twitter où vous pouvez tweeter, aimer et retweeter. C'est une façon amusante de partager vos pensées avec le monde",
+      "subtitle": "Hackatweet est un clone de Twitter où vous pouvez tweeter, aimer et retweeter. C'est une façon sympa de partager vos pensées avec le monde.",
       "imageUrl": "https://i.imgur.com/Ll0mOvh.png",
       "demoLink": "https://hackatweet-frontend-good.vercel.app"
     }
@@ -40,19 +40,19 @@
     {
       "id": 1,
       "title": "GiftEase",
-      "subtitle": "Créez et partagez des listes de souhaits avec vos amis et votre famille, et ne manquez plus jamais une occasion spéciale",
+      "subtitle": "Créez et partagez des listes de souhaits avec vos amis et votre famille, et ne manquez plus jamais une occasion spéciale.",
       "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
     },
     {
       "id": 2,
       "title": "FoodApp",
-      "subtitle": "Découvrez de nouveaux délices culinaires et enregistrez vos recettes préférées avec l'application alimentaire innovante",
+      "subtitle": "Découvrez de nouveaux délices culinaires, explorez des recettes inspirantes et enregistrez vos plats préférés grâce à cette application.",
       "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
       "id": 3,
       "title": "LocationApp",
-      "subtitle": "Trouvez votre chemin en ville et enregistrez vos endroits préférés avec cette application de localisation",
+      "subtitle": "Trouvez votre chemin en ville et enregistrez vos endroits préférés avec cette application de localisation.",
       "imageUrl": "https://i.imgur.com/CuUZrSc.png"
     }
   ]

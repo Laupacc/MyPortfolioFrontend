@@ -25,27 +25,26 @@ function About() {
               <span style={{ "--i": 5 }}>{t("about.title.5")}</span>
             </div>
             <div className={styles.aboutText}>{t("about.description")}</div>
-
-            <div className={styles.stageCubeCont}>
-              <div className={styles.cubeSpinner}>
-                <div className={styles.face1}>
-                  <FaNode color="#4B8BBE" size={160} />
-                </div>
-                <div className={styles.face2}>
-                  <FaHtml5 color="#F06529" size={160} />
-                </div>
-                <div className={styles.face3}>
-                  <FaCss3 color="#28A4D9" size={160} />
-                </div>
-                <div className={styles.face4}>
-                  <FaReact color="#5ED4F4" size={160} />
-                </div>
-                <div className={styles.face5}>
-                  <FaJsSquare color="#EFD81D" size={160} />
-                </div>
-                <div className={styles.face6}>
-                  <FaGitAlt color="#EC4D28" size={160} />
-                </div>
+          </div>
+          <div className={styles.stageCubeCont}>
+            <div className={styles.cubeSpinner}>
+              <div className={styles.face1}>
+                <FaNode color="#4B8BBE" size={160} />
+              </div>
+              <div className={styles.face2}>
+                <FaHtml5 color="#F06529" size={160} />
+              </div>
+              <div className={styles.face3}>
+                <FaCss3 color="#28A4D9" size={160} />
+              </div>
+              <div className={styles.face4}>
+                <FaReact color="#5ED4F4" size={160} />
+              </div>
+              <div className={styles.face5}>
+                <FaJsSquare color="#EFD81D" size={160} />
+              </div>
+              <div className={styles.face6}>
+                <FaGitAlt color="#EC4D28" size={160} />
               </div>
             </div>
           </div>

@@ -74,13 +74,6 @@ function Projects() {
                             </span>
                           </Button>
                         </div>
-                        {/* <a
-                          className={styles.button}
-                          href={project.demoLink}
-                          target="_blank"
-                        >
-                          {t("projects.btn.toSite")}
-                        </a> */}
                       </div>
                     </div>
                   ))}
@@ -125,9 +118,11 @@ function Projects() {
                       ></div>
                     </div>
                     <div className={styles.smallContent}>
-                      <div className={styles.title}>{project.title}</div>
-                      <div className={styles.subtitle}>{project.subtitle}</div>
-                      <div className={styles.button}>
+                      <div className={styles.smallTitle}>{project.title}</div>
+                      <div className={styles.smallSubtitle}>
+                        {project.subtitle}
+                      </div>
+                      <div className={styles.smallButton}>
                         <Button
                           className={styles.submitBtn_pushable}
                           href={project.demoLink}
@@ -140,13 +135,6 @@ function Projects() {
                           </span>
                         </Button>
                       </div>
-                      {/* <a
-                        className={styles.button}
-                        href={project.demoLink}
-                        target="_blank"
-                      >
-                        {t("projects.btn.toSite")}
-                      </a> */}
                     </div>
                   </div>
                 ))}
@@ -158,8 +146,10 @@ function Projects() {
                   <div class={styles.phone}>
                     <img src={project.imageUrl} />
                     <div className={styles.smallContentPhone}>
-                      <div className={styles.title}>{project.title}</div>
-                      <div className={styles.subtitle}>{project.subtitle}</div>
+                      <div className={styles.smallTitle}>{project.title}</div>
+                      <div className={styles.smallSubtitle}>
+                        {project.subtitle}
+                      </div>
                     </div>
                   </div>
                 ))}
