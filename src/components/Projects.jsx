@@ -106,55 +106,59 @@ function Projects() {
           </div>
 
           <div className={styles.mobileOnly}>
-            {selectedCategory === "WEB" && (
-              <div className={styles.containerweb}>
-                {currentProjectsData.webProjects.map((project) => (
-                  <div className={styles.computer}>
-                    <div className={styles.stand}>
-                      <div
-                        className={styles.monitor}
-                        style={{ backgroundImage: `url(${project.imageUrl})` }}
-                        // <iframe src={project.demoLink} width="100%" height="100%" />
-                      ></div>
-                    </div>
-                    <div className={styles.smallContent}>
-                      <div className={styles.smallTitle}>{project.title}</div>
-                      <div className={styles.smallSubtitle}>
-                        {project.subtitle}
+            <div className={styles.smallContainer}>
+              {selectedCategory === "WEB" && (
+                <div className={styles.smallWebContainer}>
+                  {currentProjectsData.webProjects.map((project) => (
+                    <div className={styles.computer}>
+                      <div className={styles.stand}>
+                        <div
+                          className={styles.monitor}
+                          style={{
+                            backgroundImage: `url(${project.imageUrl})`,
+                          }}
+                          // <iframe src={project.demoLink} width="100%" height="100%" />
+                        ></div>
                       </div>
-                      <div className={styles.smallButton}>
-                        <Button
-                          className={styles.submitBtn_pushable}
-                          href={project.demoLink}
-                          target="_blank"
-                        >
-                          <span className={styles.submitBtn_shadow}></span>
-                          <span className={styles.submitBtn_edge}></span>
-                          <span className={styles.submitBtn_front}>
-                            {t("projects.btn.toSite")}
-                          </span>
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-            {selectedCategory === "MOBILE" && (
-              <div class={styles.containerphone}>
-                {currentProjectsData.phoneProjects.map((project) => (
-                  <div class={styles.phone}>
-                    <img src={project.imageUrl} />
-                    <div className={styles.smallContentPhone}>
-                      <div className={styles.smallTitle}>{project.title}</div>
-                      <div className={styles.smallSubtitle}>
-                        {project.subtitle}
+                      <div className={styles.smallWebContent}>
+                        <div className={styles.smallTitle}>{project.title}</div>
+                        <div className={styles.smallSubtitle}>
+                          {project.subtitle}
+                        </div>
+                        <div className={styles.smallButton}>
+                          <Button
+                            className={styles.submitBtn_pushable}
+                            href={project.demoLink}
+                            target="_blank"
+                          >
+                            <span className={styles.submitBtn_shadow}></span>
+                            <span className={styles.submitBtn_edge}></span>
+                            <span className={styles.submitBtn_front}>
+                              {t("projects.btn.toSite")}
+                            </span>
+                          </Button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            )}
+                  ))}
+                </div>
+              )}
+              {selectedCategory === "MOBILE" && (
+                <div class={styles.smallPhoneContainer}>
+                  {currentProjectsData.phoneProjects.map((project) => (
+                    <div class={styles.phone}>
+                      <img src={project.imageUrl} />
+                      <div className={styles.smallPhoneContent}>
+                        <div className={styles.smallTitle}>{project.title}</div>
+                        <div className={styles.smallSubtitle}>
+                          {project.subtitle}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </Fade>
       </main>

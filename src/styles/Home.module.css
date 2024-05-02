@@ -19,7 +19,7 @@
   display: flex;
   font-size: 3em;
   color: #f05334;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .wavy {
@@ -28,8 +28,8 @@
   align-items: center;
   text-align: right;
   color: #f05334;
-  margin-top: 6rem;
-  /* margin-bottom: 7rem; */
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 .wavy span {
   animation: flip 6s infinite;
@@ -59,12 +59,39 @@
   }
   .maintext {
     font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 7rem;
   }
-
   .wavy {
     margin-top: 0;
+    margin-bottom: 4rem;
   }
   .wavy span {
     font-size: 3em;
+  }
+  .container {
+    margin: 4%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .dnaWrapper {
+    right: 5rem;
+  }
+  .maintext {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+  .wavy {
+    margin-top: 0;
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+  .wavy span {
+    font-size: 3.5em;
+  }
+  .container {
+    margin: 4%;
+    max-width: 40%;
   }
 }

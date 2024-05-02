@@ -14,19 +14,15 @@
   align-items: flex-end;
   margin-right: 3%;
   text-align: right;
-  max-width: 30%;
-  margin-top: 5rem;
-
-  /* overflow: auto;
-  max-height: calc(100vh - 5rem); */
+  max-width: 35%;
+  margin-top: 6rem;
 }
 
 .aboutText {
-  font-size: 1.8em;
+  font-size: 1.7em;
   color: #f05334;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 3rem;
-  margin-top: 5rem;
 }
 
 .wavy {
@@ -54,7 +50,8 @@
   position: relative;
   perspective: 1000px;
   -moz-perspective: 1000px;
-  margin-right: 2rem;
+  margin-right: 5rem;
+  margin-bottom: 1rem;
 }
 
 .cubeSpinner {
@@ -155,5 +152,24 @@
   }
   .container {
     max-width: 40%;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .stageCubeCont {
+    margin-bottom: 4rem;
+  }
+  .container {
+    margin-right: 4%;
+    max-width: 40%;
+    margin-top: 9rem;
+  }
+  .wavy span {
+    font-size: 3.5rem;
+  }
+  .aboutText {
+    font-size: 1.6rem;
+    margin-top: 0;
   }
 }

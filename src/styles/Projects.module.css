@@ -5,17 +5,12 @@
   justify-content: center;
   align-items: center;
 }
-
-.mobileOnly {
-  overflow-y: auto;
-  max-height: calc(100vh - 11.5rem);
-  margin-top: 11.5rem;
-}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* Desktop version */
 .webContainer {
   display: flex;
   justify-content: center;
@@ -29,7 +24,6 @@
   margin-top: 2rem;
   margin-left: 2rem;
 }
-
 .webcard {
   display: flex;
   flex-direction: column;
@@ -38,7 +32,6 @@
   margin-right: -12rem;
   margin-left: -12rem;
 }
-
 .phonecard {
   display: flex;
   flex-direction: column;
@@ -47,7 +40,6 @@
   margin-left: -4rem;
   margin-right: -4rem;
 }
-
 .webContainer .content {
   display: flex;
   flex-direction: column;
@@ -62,7 +54,6 @@
   box-shadow: 0 6px 80px rgba(0, 0, 0, 0.4);
   padding: 1rem;
 }
-
 .phoneContainer .content {
   display: flex;
   flex-direction: column;
@@ -77,17 +68,14 @@
   box-shadow: 0 6px 80px rgba(0, 0, 0, 0.4);
   padding: 1rem;
 }
-
 .title {
   font-size: 1.5em;
   color: #f05334;
   margin-bottom: 1rem;
 }
-
 .subtitle {
   font-size: 1em;
 }
-
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -102,18 +90,24 @@
   margin-bottom: 0;
 }
 
-.smallButton {
-  margin: 0;
+/* Mobile version*/
+.mobileOnly {
+  overflow-y: auto;
+  max-height: calc(100vh - 11.5rem);
+  margin-top: 11.5rem;
 }
-
-/* Small Phone */
-.containerphone {
+.mobileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Small phone */
+.smallPhoneContainer {
   height: 50vh;
   margin-top: 30vh;
   display: flex;
   flex-direction: column;
 }
-
 .phone,
 .phone img {
   height: 100%;
@@ -131,8 +125,7 @@
   border: 1.334vh solid #111;
   border-radius: 4.5vh;
 }
-
-.smallContentPhone {
+.smallPhoneContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,6 +143,9 @@
 }
 
 /* Small computer */
+.smallButton {
+  margin: 0;
+}
 .computer {
   display: flex;
   justify-content: center;
@@ -160,7 +156,6 @@
 .monitor {
   width: 315px;
   height: 200px;
-  overflow-y: scroll;
   border: solid 1em #333;
   border-radius: 0.5em;
   background-color: #111;
@@ -189,8 +184,7 @@
   top: 48px;
   left: 10px;
 }
-
-.containerweb {
+.smallWebContainer {
   margin-bottom: 8vh;
   margin-top: -2rem;
   display: flex;
@@ -198,8 +192,7 @@
   align-items: center;
   flex-direction: column;
 }
-
-.smallContent {
+.smallWebContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,34 +210,13 @@
 .smallSubtitle {
   font-size: 0.8em;
 }
-
 .smallTitle {
   font-size: 1.2em;
   color: #f05334;
   margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .webOnly {
-    display: none;
-  }
-  .buttonContainer {
-    top: 6.8rem;
-    left: 2rem;
-    right: 2rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobileOnly {
-    display: none;
-  }
-  .submitBtn_front {
-    font-size: 1rem;
-    padding: 12px 42px;
-  }
-}
-
+/* Special button */
 .submitBtn_pushable {
   position: relative;
   border: none;
@@ -289,7 +261,6 @@
     hsl(340deg, 100%, 16%) 100%
   );
 }
-
 .submitBtn_front {
   display: block;
   position: relative;
@@ -330,4 +301,42 @@
 
 .submitBtn_pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .webOnly {
+    display: none;
+  }
+  .buttonContainer {
+    top: 6.8rem;
+    left: 2rem;
+    right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileOnly {
+    display: none;
+  }
+  .submitBtn_front {
+    font-size: 1rem;
+    padding: 12px 42px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 975px) {
+  .buttonContainer {
+    top: 2.5rem;
+    left: 5%;
+  }
+  .topBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: auto;
+  }
+  .submitBtn_front {
+    font-size: 0.8rem;
+  }
 }

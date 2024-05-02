@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 0.5rem;
-  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
   z-index: 999;
 }
 
@@ -16,12 +16,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .languageSwitcher {
-    right: 0.5rem;
-    left: auto;
-    bottom: 0.5rem;
-    top: auto;
-  }
   .toggle {
     font-size: 2rem;
   }

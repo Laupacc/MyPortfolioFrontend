@@ -9,10 +9,10 @@
     },
     {
       "id": 2,
-      "title": "WeatherApp",
-      "subtitle": "This straightforward weather app keeps users in the loop with accurate forecasts, real-time weather updates, and user-friendly interface.",
-      "imageUrl": "https://i.imgur.com/VoIubdf.png",
-      "demoLink": "https://weatherapp-frontend-red.vercel.app/"
+      "title": "MemoryTwister",
+      "subtitle": "It's a cool memory game where you flip the cards and match them. It's a fun way to test your memory skills and muscle up your brain.",
+      "imageUrl": "https://i.imgur.com/WHvtVZG.png",
+      "demoLink": "https://memory-game-frontend-neon.vercel.app"
     },
     {
       "id": 3,
@@ -23,10 +23,10 @@
     },
     {
       "id": 4,
-      "title": "Memory Game",
-      "subtitle": "It's a cool memory game where you flip the cards and match them. It's a fun way to test your memory skills and muscle up your brain.",
-      "imageUrl": "https://i.imgur.com/eDRTQG6.png",
-      "demoLink": "https://memory-game-frontend-neon.vercel.app"
+      "title": "WeatherApp",
+      "subtitle": "This straightforward weather app keeps users in the loop with accurate forecasts, real-time weather updates, and user-friendly interface.",
+      "imageUrl": "https://i.imgur.com/VoIubdf.png",
+      "demoLink": "https://weatherapp-frontend-red.vercel.app/"
     },
     {
       "id": 5,
