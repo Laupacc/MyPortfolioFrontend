@@ -5,10 +5,6 @@
   align-items: flex-end;
   min-height: 100vh;
   width: auto;
-
-  overflow-y: auto;
-  max-height: calc(100vh - 5rem);
-  margin-top: 5rem;
 }
 
 .container {
@@ -19,7 +15,7 @@
   margin-right: 3%;
   text-align: right;
   max-width: 35%;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .aboutText {
@@ -54,8 +50,9 @@
   position: relative;
   perspective: 1000px;
   -moz-perspective: 1000px;
-  margin-right: 5rem;
+  margin-right: 4rem;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 .cubeSpinner {
@@ -144,6 +141,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .main {
+    min-height: auto;
+    width: auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 5rem);
+    margin-top: 5rem;
+  }
   .stageCubeCont {
     margin-bottom: 6rem;
   }
@@ -157,6 +161,7 @@
   .container {
     max-width: 40%;
     margin-right: 4%;
+    margin-top: 12rem;
   }
 }
 
