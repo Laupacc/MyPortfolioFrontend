@@ -4,36 +4,36 @@
       "id": 1,
       "title": "ScreenSeeker",
       "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film.",
-      "imageUrl": "https://i.imgur.com/NWTgcue.png",
-      "demoLink": "https://my-movies-frontend-six.vercel.app/"
+      "imageUrl": "https://i.imgur.com/tOVtwX6.png",
+      "demoLink": "https://screenseeker.vercel.app/"
     },
     {
       "id": 2,
       "title": "MemoryTwister",
       "subtitle": "It's a cool memory game where you flip the cards and match them. It's a fun way to test your memory skills and muscle up your brain.",
-      "imageUrl": "https://i.imgur.com/WHvtVZG.png",
-      "demoLink": "https://memory-game-frontend-neon.vercel.app"
+      "imageUrl": "https://i.imgur.com/jlm1Lfd.png",
+      "demoLink": "https://memory-twister.vercel.app"
     },
     {
       "id": 3,
-      "title": "NewsApp",
+      "title": "Yet Another News App",
       "subtitle": "Stay updated with the latest headlines and create a personalized experience by signing up and bookmarking your favorite articles",
-      "imageUrl": "https://i.imgur.com/SD7efJg.png",
-      "demoLink": "https://morning-news-frontend-alpha.vercel.app/"
+      "imageUrl": "https://i.imgur.com/nGXCcWK.png",
+      "demoLink": "https://yet-another-news-app.vercel.app/"
     },
     {
       "id": 4,
       "title": "WeatherApp",
       "subtitle": "This straightforward weather app keeps users in the loop with accurate forecasts, real-time weather updates, and user-friendly interface.",
-      "imageUrl": "https://i.imgur.com/VoIubdf.png",
-      "demoLink": "https://weatherapp-frontend-red.vercel.app/"
+      "imageUrl": "https://i.imgur.com/29mf1Wf.png",
+      "demoLink": "https://weatherappagain-frontend-red.vercel.app/"
     },
     {
       "id": 5,
       "title": "Hackatweet",
       "subtitle": "Hackatweet is a Twitter clone where you can tweet, like, and retweet. It's a fun way to share your thoughts with the world",
-      "imageUrl": "https://i.imgur.com/Ll0mOvh.png",
-      "demoLink": "https://hackatweet-frontend-good.vercel.app"
+      "imageUrl": "https://i.imgur.com/HKSfQPY.png",
+      "demoLink": "https://hackatweetwillchange.vercel.app"
     }
   ],
   "phoneProjects": [

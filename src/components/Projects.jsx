@@ -18,30 +18,29 @@ function Projects() {
   return (
     <>
       <main className={styles.main}>
+        <div className={styles.buttonContainer}>
+          <button
+            className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
+            onClick={() => setSelectedCategory("WEB")}
+          >
+            <span className={styles.submitBtn_shadow}></span>
+            <span className={styles.submitBtn_edge}></span>
+            <span className={styles.submitBtn_front}>
+              {t("projects.btn.web")}
+            </span>
+          </button>
+          <button
+            className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
+            onClick={() => setSelectedCategory("MOBILE")}
+          >
+            <span className={styles.submitBtn_shadow}></span>
+            <span className={styles.submitBtn_edge}></span>
+            <span className={styles.submitBtn_front}>
+              {t("projects.btn.mobile")}
+            </span>
+          </button>
+        </div>
         <Fade right>
-          <div className={styles.buttonContainer}>
-            <button
-              className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
-              onClick={() => setSelectedCategory("WEB")}
-            >
-              <span className={styles.submitBtn_shadow}></span>
-              <span className={styles.submitBtn_edge}></span>
-              <span className={styles.submitBtn_front}>
-                {t("projects.btn.web")}
-              </span>
-            </button>
-            <button
-              className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
-              onClick={() => setSelectedCategory("MOBILE")}
-            >
-              <span className={styles.submitBtn_shadow}></span>
-              <span className={styles.submitBtn_edge}></span>
-              <span className={styles.submitBtn_front}>
-                {t("projects.btn.mobile")}
-              </span>
-            </button>
-          </div>
-
           <div className={styles.webOnly}>
             <div className={styles.container}>
               {selectedCategory === "WEB" && (
@@ -104,7 +103,9 @@ function Projects() {
               )}
             </div>
           </div>
+        </Fade>
 
+        <Fade bottom>
           <div className={styles.mobileOnly}>
             <div className={styles.smallContainer}>
               {selectedCategory === "WEB" && (
@@ -117,8 +118,13 @@ function Projects() {
                           style={{
                             backgroundImage: `url(${project.imageUrl})`,
                           }}
-                          // <iframe src={project.demoLink} width="100%" height="100%" />
-                        ></div>
+                        >
+                          {/* <iframe
+                            src={project.demoLink}
+                            width="100%"
+                            height="100%"
+                          /> */}
+                        </div>
                       </div>
                       <div className={styles.smallWebContent}>
                         <div className={styles.smallTitle}>{project.title}</div>
