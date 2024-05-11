@@ -5,6 +5,10 @@
   align-items: flex-end;
   min-height: 100vh;
   width: auto;
+
+  overflow-y: auto;
+  max-height: calc(100vh - 5rem);
+  margin-top: 5rem;
 }
 
 .container {

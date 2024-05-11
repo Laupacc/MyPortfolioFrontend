@@ -48,7 +48,7 @@ function Contact() {
     <div>
       <main className={styles.main}>
         <div className={styles.container}>
-          <Fade right>
+          <Fade bottom>
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <input
@@ -77,9 +77,6 @@ function Contact() {
                   className={styles.formfield}
                   rows="5"
                 />
-                {/* <button type="submit" value="Send" className={styles.submitBtn}>
-                  <span component="span">{t("contact.send")}</span>
-                </button> */}
                 <button className={styles.submitBtn_pushable}>
                   <span className={styles.submitBtn_shadow}></span>
                   <span className={styles.submitBtn_edge}></span>

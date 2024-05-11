@@ -29,7 +29,7 @@ function Home() {
         />
       ) : (
         <div className={styles.main}>
-          <Fade right>
+          <Fade bottom>
             <div className={styles.container}>
               <div className={styles.wavy}>
                 <span style={{ "--i": 1 }}>{t("home.title.1")}</span>

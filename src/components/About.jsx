@@ -15,8 +15,9 @@ function About() {
   return (
     <>
       <div className={styles.main}>
-        <Fade right>
+        <Fade bottom>
           <div className={styles.container}>
+            {/* <div className={styles.under}> */}
             <div className={styles.wavy}>
               <span style={{ "--i": 1 }}>{t("about.title.1")}</span>
               <span style={{ "--i": 2 }}>{t("about.title.2")}</span>
@@ -48,6 +49,7 @@ function About() {
                 </div>
               </div>
             </div>
+            {/* </div> */}
           </div>
         </Fade>
       </div>
