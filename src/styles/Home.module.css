@@ -14,6 +14,25 @@
   margin: 3%;
   max-width: 30%;
 }
+.fadeDesktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  margin: 3%;
+  max-width: 30%;
+}
+
+.fadeMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  margin: 3%;
+  max-width: 30%;
+}
 
 .maintext {
   display: flex;
@@ -72,8 +91,11 @@
   .container {
     margin: 4%;
   }
+  .fadeDesktop {
+    display: none;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .dnaWrapper {
     right: 5rem;
   }
@@ -93,5 +115,8 @@
   .container {
     margin: 4%;
     max-width: 40%;
+  }
+  .fadeMobile {
+    display: none;
   }
 }

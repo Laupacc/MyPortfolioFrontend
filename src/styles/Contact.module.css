@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 100vh;
 }
@@ -28,11 +28,19 @@
   border-color: #f05334;
 }
 
-.container {
+.fadeDesktop {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 45%;
+  height: 55%;
   margin-right: 3%;
+}
+.fadeMobile {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: 4%;
+  margin-left: 4%;
 }
 
 .formwrapper {
@@ -157,11 +165,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    justify-content: center;
-    margin-right: 4%;
-    margin-left: 4%;
-  }
   .formwrapper {
     width: 90%;
     height: auto;
@@ -171,12 +174,19 @@
   .submitBtn_pushable {
     margin-top: 1.5rem;
   }
+  .fadeDesktop {
+    display: none;
+  }
 }
-@media screen and (min-width: 460px) and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
   .formwrapper {
-    width: 65%;
+    width: 100%;
     height: auto;
     padding: 1.5rem;
     margin-top: 1rem;
+  }
+  .fadeMobile {
+    display: none;
   }
 }

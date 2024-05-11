@@ -47,7 +47,8 @@ function Contact() {
   return (
     <div>
       <main className={styles.main}>
-        <div className={styles.container}>
+        {/* <div className={styles.container}> */}
+        <div className={styles.fadeMobile}>
           <Fade bottom>
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
@@ -88,6 +89,49 @@ function Contact() {
             </div>
           </Fade>
         </div>
+
+        <div className={styles.fadeDesktop}>
+          <Fade right>
+            <div className={styles.formwrapper}>
+              <form ref={form} onSubmit={sendEmail} className={styles.form}>
+                <input
+                  required
+                  label="Name"
+                  type="text"
+                  name="name"
+                  placeholder={t("contact.name")}
+                  className={styles.formfield}
+                />
+                <input
+                  required
+                  label="Email"
+                  type="email"
+                  name="email"
+                  autoComplete="on"
+                  placeholder={t("contact.email")}
+                  className={styles.formfield}
+                />
+                <textarea
+                  required
+                  label="Message"
+                  name="message"
+                  autoComplete="on"
+                  placeholder={t("contact.message")}
+                  className={styles.formfield}
+                  rows="5"
+                />
+                <button className={styles.submitBtn_pushable}>
+                  <span className={styles.submitBtn_shadow}></span>
+                  <span className={styles.submitBtn_edge}></span>
+                  <span className={styles.submitBtn_front}>
+                    {t("contact.send")}
+                  </span>
+                </button>
+              </form>
+            </div>
+          </Fade>
+        </div>
+        {/* </div> */}
       </main>
     </div>
   );
