@@ -54,7 +54,7 @@ function Contact() {
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <input
                   required
-                  label="Name"
+                  label="name"
                   type="text"
                   name="name"
                   placeholder={t("contact.name")}
@@ -62,7 +62,7 @@ function Contact() {
                 />
                 <input
                   required
-                  label="Email"
+                  label="email"
                   type="email"
                   name="email"
                   autoComplete="on"
@@ -71,7 +71,7 @@ function Contact() {
                 />
                 <textarea
                   required
-                  label="Message"
+                  label="message"
                   name="message"
                   autoComplete="on"
                   placeholder={t("contact.message")}
@@ -96,7 +96,7 @@ function Contact() {
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <input
                   required
-                  label="Name"
+                  label="name"
                   type="text"
                   name="name"
                   placeholder={t("contact.name")}
@@ -104,7 +104,7 @@ function Contact() {
                 />
                 <input
                   required
-                  label="Email"
+                  label="email"
                   type="email"
                   name="email"
                   autoComplete="on"
@@ -113,7 +113,7 @@ function Contact() {
                 />
                 <textarea
                   required
-                  label="Message"
+                  label="message"
                   name="message"
                   autoComplete="on"
                   placeholder={t("contact.message")}
