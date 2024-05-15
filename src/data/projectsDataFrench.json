@@ -26,7 +26,7 @@
       "title": "WeatherApp",
       "subtitle": "C'est une application météo permettant de vous informé avec des prévisions précises et des mises à jour en temps réel.",
       "imageUrl": "https://i.imgur.com/29mf1Wf.png",
-      "demoLink": "https://weatherappagain-frontend-red.vercel.app/"
+      "demoLink": "https://under-the-weather.vercel.app/"
     },
     {
       "id": 5,
