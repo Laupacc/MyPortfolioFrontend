@@ -3,14 +3,14 @@
     {
       "id": 1,
       "title": "ScreenSeeker",
-      "subtitle": "ScreenSeeker est un site web où vous pouvez consulter les dernières sorties de films et de séries, créer une liste de souhaits et noter chaque film.",
+      "subtitle": "ScreenSeeker est un site web où vous pouvez consulter les dernières sorties de films et de séries, leur attribuer une note et crér une liste de souhaits.",
       "imageUrl": "https://i.imgur.com/tOVtwX6.png",
       "demoLink": "https://screenseeker.vercel.app/"
     },
     {
       "id": 2,
       "title": "MemoryTwister",
-      "subtitle": "C'est un jeu de mémoire où vous retournez les cartes et les associez. C'est une façon amusante de tester vos compétences en matière de mémoire.",
+      "subtitle": "Laissez-vous tenter par ce jeu de mémoire amusant avec des cartes personnalisées et des niveaux de difficulté variés. Le temps est compté, alors soyez rapide!",
       "imageUrl": "https://i.imgur.com/jlm1Lfd.png",
       "demoLink": "https://memory-twister.vercel.app"
     },
@@ -23,9 +23,9 @@
     },
     {
       "id": 4,
-      "title": "WeatherApp",
-      "subtitle": "C'est une application météo permettant de vous informé avec des prévisions précises et des mises à jour en temps réel.",
-      "imageUrl": "https://i.imgur.com/29mf1Wf.png",
+      "title": "Under The Weather",
+      "subtitle": "Cette application météo vous permet de personnaliser votre tableau de bord avec vos villes favorites grace à des mises à jour en temps réel.",
+      "imageUrl": "https://i.imgur.com/IR88u7h.png",
       "demoLink": "https://under-the-weather.vercel.app/"
     },
     {

@@ -3,14 +3,14 @@
     {
       "id": 1,
       "title": "ScreenSeeker",
-      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases, create a wishlist, track views, and rate each film.",
+      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases with filter options, create a wishlist and rate each feature.",
       "imageUrl": "https://i.imgur.com/tOVtwX6.png",
       "demoLink": "https://screenseeker.vercel.app/"
     },
     {
       "id": 2,
       "title": "MemoryTwister",
-      "subtitle": "It's a cool memory game where you flip the cards and match them. It's a fun way to test your memory skills and muscle up your brain.",
+      "subtitle": "Indulge yourself in this fun memory game with customized cards and various levels of difficulty. Time is ticking, so be quick!",
       "imageUrl": "https://i.imgur.com/jlm1Lfd.png",
       "demoLink": "https://memory-twister.vercel.app"
     },
@@ -23,9 +23,9 @@
     },
     {
       "id": 4,
-      "title": "WeatherApp",
-      "subtitle": "This straightforward weather app keeps users in the loop with accurate forecasts, real-time weather updates, and user-friendly interface.",
-      "imageUrl": "https://i.imgur.com/29mf1Wf.png",
+      "title": "Under The Weather",
+      "subtitle": "This straightforward weather app allows you to customize your dashboard with your favorite cities through real-time updates and 5-day forecast.",
+      "imageUrl": "https://i.imgur.com/IR88u7h.png",
       "demoLink": "https://under-the-weather.vercel.app/"
     },
     {
