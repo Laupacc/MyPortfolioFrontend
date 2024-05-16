@@ -56,27 +56,27 @@ function Contact() {
                   required
                   label="name"
                   type="text"
-                  name="name"
                   placeholder={t("contact.name")}
                   className={styles.formfield}
+                  name="name"
                 />
                 <input
                   required
                   label="email"
                   type="email"
-                  name="email"
                   autoComplete="on"
                   placeholder={t("contact.email")}
                   className={styles.formfield}
+                  name="email"
                 />
                 <textarea
                   required
                   label="message"
-                  name="message"
                   autoComplete="on"
                   placeholder={t("contact.message")}
                   className={styles.formfield}
                   rows="5"
+                  name="message"
                 />
                 <button className={styles.submitBtn_pushable}>
                   <span className={styles.submitBtn_shadow}></span>
@@ -98,27 +98,27 @@ function Contact() {
                   required
                   label="name"
                   type="text"
-                  name="name"
                   placeholder={t("contact.name")}
                   className={styles.formfield}
+                  name="name"
                 />
                 <input
                   required
                   label="email"
                   type="email"
-                  name="email"
                   autoComplete="on"
                   placeholder={t("contact.email")}
                   className={styles.formfield}
+                  name="email"
                 />
                 <textarea
                   required
                   label="message"
-                  name="message"
                   autoComplete="on"
                   placeholder={t("contact.message")}
                   className={styles.formfield}
                   rows="5"
+                  name="message"
                 />
                 <button className={styles.submitBtn_pushable}>
                   <span className={styles.submitBtn_shadow}></span>
