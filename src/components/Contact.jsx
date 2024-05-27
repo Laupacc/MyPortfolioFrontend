@@ -53,28 +53,28 @@ function Contact() {
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <input
+                  className={styles.formfield}
                   required
                   label="name"
                   type="text"
                   placeholder={t("contact.name")}
-                  className={styles.formfield}
                   name="name"
                 />
                 <input
+                  className={styles.formfield}
                   required
                   label="email"
                   type="email"
                   autoComplete="on"
                   placeholder={t("contact.email")}
-                  className={styles.formfield}
                   name="email"
                 />
                 <textarea
+                  className={styles.formfield}
                   required
                   label="message"
                   autoComplete="on"
                   placeholder={t("contact.message")}
-                  className={styles.formfield}
                   rows="5"
                   name="message"
                 />
@@ -95,28 +95,28 @@ function Contact() {
             <div className={styles.formwrapper}>
               <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <input
+                  className={styles.formfield}
                   required
                   label="name"
                   type="text"
                   placeholder={t("contact.name")}
-                  className={styles.formfield}
                   name="name"
                 />
                 <input
+                  className={styles.formfield}
                   required
                   label="email"
                   type="email"
                   autoComplete="on"
                   placeholder={t("contact.email")}
-                  className={styles.formfield}
                   name="email"
                 />
                 <textarea
+                  className={styles.formfield}
                   required
                   label="message"
                   autoComplete="on"
                   placeholder={t("contact.message")}
-                  className={styles.formfield}
                   rows="5"
                   name="message"
                 />
