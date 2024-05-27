@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import { DNA, RotatingTriangles } from "react-loader-spinner";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -15,6 +16,7 @@ function Home() {
   }, []);
 
   const { t } = useTranslation();
+  const isDesktop = useMediaQuery({ minWidth: 768 });
 
   return (
     <>
@@ -29,23 +31,8 @@ function Home() {
         />
       ) : (
         <div className={styles.main}>
-          <div className={styles.fadeMobile}>
-            <Fade bottom>
-              <div className={styles.container}>
-                <div className={styles.wavy}>
-                  <span style={{ "--i": 1 }}>{t("home.title.1")}</span>
-                  <span style={{ "--i": 2 }}>{t("home.title.2")}</span>
-                  <span style={{ "--i": 3 }}>{t("home.title.3")}</span>
-                  <span style={{ "--i": 4 }}>{t("home.title.4")}</span>
-                  <span style={{ "--i": 5 }}>{t("home.title.5")}</span>
-                </div>
-                <div className={styles.maintext}>{t("home.description")}</div>
-              </div>
-            </Fade>
-          </div>
-
-          <div className={styles.fadeDesktop}>
-            <Fade right>
+          <div className={isDesktop ? styles.fadeDesktop : styles.fadeMobile}>
+            <Fade {...(isDesktop ? { right: true } : { bottom: true })}>
               <div className={styles.container}>
                 <div className={styles.wavy}>
                   <span style={{ "--i": 1 }}>{t("home.title.1")}</span>
