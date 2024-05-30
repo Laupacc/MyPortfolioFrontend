@@ -9,6 +9,7 @@ import {
   FaJsSquare,
   FaGitAlt,
 } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 import { useMediaQuery } from "react-responsive";
 
 function About() {
@@ -39,7 +40,7 @@ function About() {
                     <FaHtml5 color="#F06529" size={160} />
                   </div>
                   <div className={styles.face3}>
-                    <FaCss3 color="#28A4D9" size={160} />
+                    <SiTailwindcss color="#37BCF8" size={160} />
                   </div>
                   <div className={styles.face4}>
                     <FaReact color="#5ED4F4" size={160} />
