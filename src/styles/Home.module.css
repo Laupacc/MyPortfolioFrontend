@@ -14,16 +14,7 @@
   margin: 3%;
   max-width: 30%;
 }
-.fadeDesktop {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: right;
-  margin: 3%;
-  max-width: 30%;
-}
-
+.fadeDesktop,
 .fadeMobile {
   display: flex;
   flex-direction: column;
