@@ -10,6 +10,22 @@
   justify-content: center;
   align-items: center;
 }
+
+.swipe {
+  position: fixed;
+  top: 10rem;
+  right: 5rem;
+  font-size: 1rem;
+  color: #f05334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 0.25rem;
+}
+
 /* Desktop version */
 .webContainer {
   display: flex;
@@ -311,6 +327,9 @@
     top: 6.8rem;
     left: 2rem;
     right: 2rem;
+  }
+  .swipe {
+    display: none;
   }
 }
 

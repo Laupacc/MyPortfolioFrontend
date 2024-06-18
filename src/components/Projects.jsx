@@ -7,6 +7,7 @@ import "react-device-frameset/styles/marvel-devices.min.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@mui/material";
+import { BsArrowRight } from "react-icons/bs";
 
 function Projects() {
   const { t, i18n } = useTranslation();
@@ -40,6 +41,11 @@ function Projects() {
             </span>
           </button>
         </div>
+        <div className={styles.swipe}>
+          Swipe for more projects{" "}
+          <BsArrowRight className={styles.arrow} size={25} />
+        </div>
+
         <Fade right>
           <div className={styles.webOnly}>
             <div className={styles.container}>
