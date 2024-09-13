@@ -39,18 +39,24 @@
   "phoneProjects": [
     {
       "id": 1,
+      "title": "PicToPlate",
+      "subtitle": "Use AI powered object detection to analyze a photo of your ingredients and generate recipe ideas based on what you have at home.",
+      "imageUrl": "https://i.imgur.com/Dd6R52J.png"
+    },
+    {
+      "id": 2,
       "title": "GiftEase",
       "subtitle": "Create and share wishlists with friends and family, and never miss a special occasion again.",
       "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "FoodApp",
       "subtitle": "Discover new culinary delights and save your favorite recipes with the innovative food app.",
       "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "LocationApp",
       "subtitle": "Find your way around town and save your favourite places with this location app.",
       "imageUrl": "https://i.imgur.com/CuUZrSc.png"

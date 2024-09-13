@@ -39,18 +39,24 @@
   "phoneProjects": [
     {
       "id": 1,
+      "title": "PicToPlate",
+      "subtitle": "Utilisez la détection d'objets par l'IA pour analyser une photo de vos ingrédients et générer des idées de recettes en fonction de ce que vous avez à la maison.",
+      "imageUrl": "https://i.imgur.com/Dd6R52J.png"
+    },
+    {
+      "id": 2,
       "title": "GiftEase",
       "subtitle": "Créez et partagez des listes de souhaits avec vos amis et votre famille, et ne manquez plus jamais une occasion spéciale.",
       "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "FoodApp",
       "subtitle": "Découvrez de nouveaux délices culinaires, explorez des recettes inspirantes et enregistrez vos plats préférés grâce à cette application.",
       "imageUrl": "https://i.imgur.com/t2T76aw.png"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "LocationApp",
       "subtitle": "Trouvez votre chemin en ville et enregistrez vos endroits préférés avec cette application de localisation.",
       "imageUrl": "https://i.imgur.com/CuUZrSc.png"
