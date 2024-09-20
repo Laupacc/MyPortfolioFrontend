@@ -50,7 +50,7 @@ function Resume() {
           <SpeedDial
             className={styles.speedDial}
             ariaLabel="SpeedDial"
-            direction="up"
+            direction="down"
             icon={<SpeedDialIcon />}
           >
             {actions.map((action) => (

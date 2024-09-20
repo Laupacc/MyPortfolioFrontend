@@ -2,38 +2,31 @@
   "webProjects": [
     {
       "id": 1,
-      "title": "ScreenSeeker",
-      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases with filter options, create a wishlist and rate each feature.",
-      "imageUrl": "https://i.imgur.com/tOVtwX6.png",
-      "demoLink": "https://screenseeker.vercel.app/"
-    },
-    {
-      "id": 2,
       "title": "MemoryTwister",
       "subtitle": "Indulge yourself in this fun memory game with customized cards and various levels of difficulty. Time is ticking, so be quick!",
       "imageUrl": "https://i.imgur.com/jlm1Lfd.png",
       "demoLink": "https://memory-twister.vercel.app"
     },
     {
-      "id": 3,
-      "title": "Yet Another News App",
-      "subtitle": "Stay updated with the latest headlines and create a personalized experience by signing up and bookmarking your favorite articles",
-      "imageUrl": "https://i.imgur.com/nGXCcWK.png",
-      "demoLink": "https://yet-another-news-app.vercel.app/"
-    },
-    {
-      "id": 4,
+      "id": 2,
       "title": "Under The Weather",
       "subtitle": "This straightforward weather app allows you to customize your dashboard with your favorite cities through real-time updates and 5-day forecast.",
       "imageUrl": "https://i.imgur.com/IR88u7h.png",
       "demoLink": "https://under-the-weather.vercel.app/"
     },
     {
-      "id": 5,
-      "title": "Hackatweet",
-      "subtitle": "Hackatweet is a Twitter clone where you can tweet, like, and retweet. It's a fun way to share your thoughts with the world",
-      "imageUrl": "https://i.imgur.com/HKSfQPY.png",
-      "demoLink": "https://hackatweetwillchange.vercel.app"
+      "id": 3,
+      "title": "ScreenSeeker",
+      "subtitle": "ScreenSeeker is a website where you can view movie and tv show releases with filter options, create a wishlist and rate each feature.",
+      "imageUrl": "https://i.imgur.com/tOVtwX6.png",
+      "demoLink": "https://screenseeker.vercel.app/"
+    },
+    {
+      "id": 4,
+      "title": "Yet Another News App",
+      "subtitle": "Stay updated with the latest headlines and create a personalized experience by signing up and bookmarking your favorite articles",
+      "imageUrl": "https://i.imgur.com/nGXCcWK.png",
+      "demoLink": "https://yet-another-news-app.vercel.app/"
     }
   ],
   "phoneProjects": [
@@ -41,25 +34,15 @@
       "id": 1,
       "title": "PicToPlate",
       "subtitle": "Use AI powered object detection to analyze a photo of your ingredients and generate recipe ideas based on what you have at home.",
-      "imageUrl": "https://i.imgur.com/Dd6R52J.png"
+      "imageUrl": "https://i.imgur.com/Dd6R52J.png",
+      "videoUrl": "/assets/PicToPlateVideo.mp4"
     },
     {
       "id": 2,
       "title": "GiftEase",
       "subtitle": "Create and share wishlists with friends and family, and never miss a special occasion again.",
-      "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
-    },
-    {
-      "id": 3,
-      "title": "FoodApp",
-      "subtitle": "Discover new culinary delights and save your favorite recipes with the innovative food app.",
-      "imageUrl": "https://i.imgur.com/t2T76aw.png"
-    },
-    {
-      "id": 4,
-      "title": "LocationApp",
-      "subtitle": "Find your way around town and save your favourite places with this location app.",
-      "imageUrl": "https://i.imgur.com/CuUZrSc.png"
+      "imageUrl": "https://i.imgur.com/fMXO9Oz.png",
+      "videoUrl": "/assets/GiftEaseVideo.mp4"
     }
   ]
 }

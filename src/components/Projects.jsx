@@ -8,28 +8,23 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@mui/material";
 import { BsArrowRight } from "react-icons/bs";
+import { Category } from "@mui/icons-material";
 
 function Projects() {
   const { t, i18n } = useTranslation();
   const currentProjectsData =
     i18n.language === "fr" ? projectsDataFrench : projectsData;
 
-  const [selectedCategory, setSelectedCategory] = useState("WEB");
+  const [selectedCategory, setSelectedCategory] = useState("MOBILE");
 
   return (
     <>
-      <main className={styles.main}>
+      <main
+        className={selectedCategory === "WEB" ? styles.main : styles.mainPhone}
+      >
+        {/* Top Buttons */}
         <div className={styles.buttonContainer}>
-          <button
-            className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
-            onClick={() => setSelectedCategory("WEB")}
-          >
-            <span className={styles.submitBtn_shadow}></span>
-            <span className={styles.submitBtn_edge}></span>
-            <span className={styles.submitBtn_front}>
-              {t("projects.btn.web")}
-            </span>
-          </button>
+          {/* Button MOBILE */}
           <button
             className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
             onClick={() => setSelectedCategory("MOBILE")}
@@ -40,15 +35,31 @@ function Projects() {
               {t("projects.btn.mobile")}
             </span>
           </button>
-        </div>
-        <div className={styles.swipe}>
-          Swipe for more projects{" "}
-          <BsArrowRight className={styles.arrow} size={25} />
+          {/* Button WEB */}
+          <button
+            className={`${styles.submitBtn_pushable} ${styles.topBtn}`}
+            onClick={() => setSelectedCategory("WEB")}
+          >
+            <span className={styles.submitBtn_shadow}></span>
+            <span className={styles.submitBtn_edge}></span>
+            <span className={styles.submitBtn_front}>
+              {t("projects.btn.web")}
+            </span>
+          </button>
         </div>
 
+        {selectedCategory === "WEB" && (
+          <div className={styles.swipe}>
+            Swipe for more projects{" "}
+            <BsArrowRight className={styles.arrow} size={25} />
+          </div>
+        )}
+
+        {/* Desktop Version */}
         <Fade right>
           <div className={styles.webOnly}>
             <div className={styles.container}>
+              {/* Web Apps */}
               {selectedCategory === "WEB" && (
                 <div className={styles.webContainer}>
                   {currentProjectsData.webProjects.map((project) => (
@@ -85,17 +96,31 @@ function Projects() {
                 </div>
               )}
 
+              {/* Mobile Apps */}
               {selectedCategory === "MOBILE" && (
                 <div className={styles.phoneContainer}>
                   {currentProjectsData.phoneProjects.map((project) => (
                     <div className={styles.phonecard} key={project.id}>
-                      <DeviceFrameset device="iPhone X" zoom={"50%"}>
-                        <img
-                          src={project.imageUrl}
-                          width="100%"
-                          height="100%"
-                          alt={project.title}
-                        />
+                      <DeviceFrameset device="iPhone X" zoom={"60%"}>
+                        {project.videoUrl ? (
+                          <video
+                            src={project.videoUrl}
+                            width="100%"
+                            height="100%"
+                            autoPlay
+                            controls
+                            loop
+                            alt={project.title}
+                            style={{ objectFit: "fill" }}
+                          />
+                        ) : (
+                          <img
+                            src={project.imageUrl}
+                            width="100%"
+                            height="100%"
+                            alt={project.title}
+                          />
+                        )}
                       </DeviceFrameset>
                       <div className={styles.content}>
                         <div className={styles.title}>{project.title}</div>
@@ -111,9 +136,11 @@ function Projects() {
           </div>
         </Fade>
 
+        {/* Mobile Version */}
         <Fade bottom>
           <div className={styles.mobileOnly}>
             <div className={styles.smallContainer}>
+              {/* Web Apps */}
               {selectedCategory === "WEB" && (
                 <div className={styles.smallWebContainer}>
                   {currentProjectsData.webProjects.map((project) => (
@@ -155,11 +182,23 @@ function Projects() {
                   ))}
                 </div>
               )}
+
+              {/* Mobile Apps */}
               {selectedCategory === "MOBILE" && (
                 <div class={styles.smallPhoneContainer}>
                   {currentProjectsData.phoneProjects.map((project) => (
-                    <div class={styles.phone}>
-                      <img src={project.imageUrl} />
+                    <div className={styles.phone} key={project.id}>
+                      {project.videoUrl ? (
+                        <video
+                          src={project.videoUrl}
+                          autoPlay
+                          controls
+                          loop
+                          alt={project.title}
+                        />
+                      ) : (
+                        <img src={project.imageUrl} alt={project.title} />
+                      )}
                       <div className={styles.smallPhoneContent}>
                         <div className={styles.smallTitle}>{project.title}</div>
                         <div className={styles.smallSubtitle}>

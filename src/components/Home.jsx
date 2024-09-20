@@ -23,6 +23,7 @@ function Home() {
       <div className={isDesktop ? styles.fadeDesktop : styles.fadeMobile}>
         <Fade {...(isDesktop ? { right: true } : { bottom: true })}>
           <div className={styles.container}>
+            <div className={styles.topText}>{t("home.topText")}</div>
             <div className={styles.wavy}>
               <span style={{ "--i": 1 }}>{t("home.title.1")}</span>
               <span style={{ "--i": 2 }}>{t("home.title.2")}</span>

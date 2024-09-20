@@ -2,38 +2,31 @@
   "webProjects": [
     {
       "id": 1,
-      "title": "ScreenSeeker",
-      "subtitle": "ScreenSeeker est un site web où vous pouvez consulter les dernières sorties de films et de séries, leur attribuer une note et crér une liste de souhaits.",
-      "imageUrl": "https://i.imgur.com/tOVtwX6.png",
-      "demoLink": "https://screenseeker.vercel.app/"
-    },
-    {
-      "id": 2,
       "title": "MemoryTwister",
       "subtitle": "Laissez-vous tenter par ce jeu de mémoire amusant avec des cartes personnalisées et des niveaux de difficulté variés. Le temps est compté, alors soyez rapide!",
       "imageUrl": "https://i.imgur.com/jlm1Lfd.png",
       "demoLink": "https://memory-twister.vercel.app"
     },
     {
-      "id": 3,
-      "title": "Yet Another News App",
-      "subtitle": "Restez à jour avec les derniers titres et créez une expérience personnalisée en vous inscrivant et en mettant en favori vos articles préférés.",
-      "imageUrl": "https://i.imgur.com/nGXCcWK.png",
-      "demoLink": "https://yet-another-news-app.vercel.app/"
-    },
-    {
-      "id": 4,
+      "id": 2,
       "title": "Under The Weather",
       "subtitle": "Cette application météo vous permet de personnaliser votre tableau de bord avec vos villes favorites grace à des mises à jour en temps réel.",
       "imageUrl": "https://i.imgur.com/IR88u7h.png",
       "demoLink": "https://under-the-weather.vercel.app/"
     },
     {
-      "id": 5,
-      "title": "Hackatweet",
-      "subtitle": "Hackatweet est un clone de Twitter où vous pouvez tweeter, aimer et retweeter. C'est une façon sympa de partager vos pensées avec le monde.",
-      "imageUrl": "https://i.imgur.com/HKSfQPY.png",
-      "demoLink": "https://hackatweetwillchange.vercel.app"
+      "id": 3,
+      "title": "ScreenSeeker",
+      "subtitle": "ScreenSeeker est un site web où vous pouvez consulter les dernières sorties de films et de séries, leur attribuer une note et crér une liste de souhaits.",
+      "imageUrl": "https://i.imgur.com/tOVtwX6.png",
+      "demoLink": "https://screenseeker.vercel.app/"
+    },
+    {
+      "id": 4,
+      "title": "Yet Another News App",
+      "subtitle": "Restez à jour avec les derniers titres et créez une expérience personnalisée en vous inscrivant et en mettant en favori vos articles préférés.",
+      "imageUrl": "https://i.imgur.com/nGXCcWK.png",
+      "demoLink": "https://yet-another-news-app.vercel.app/"
     }
   ],
   "phoneProjects": [
@@ -41,25 +34,15 @@
       "id": 1,
       "title": "PicToPlate",
       "subtitle": "Utilisez la détection d'objets par l'IA pour analyser une photo de vos ingrédients et générer des idées de recettes en fonction de ce que vous avez à la maison.",
-      "imageUrl": "https://i.imgur.com/Dd6R52J.png"
+      "imageUrl": "https://i.imgur.com/Dd6R52J.png",
+      "videoUrl": "/assets/PicToPlateVideo.mp4"
     },
     {
       "id": 2,
       "title": "GiftEase",
       "subtitle": "Créez et partagez des listes de souhaits avec vos amis et votre famille, et ne manquez plus jamais une occasion spéciale.",
-      "imageUrl": "https://i.imgur.com/fMXO9Oz.png"
-    },
-    {
-      "id": 3,
-      "title": "FoodApp",
-      "subtitle": "Découvrez de nouveaux délices culinaires, explorez des recettes inspirantes et enregistrez vos plats préférés grâce à cette application.",
-      "imageUrl": "https://i.imgur.com/t2T76aw.png"
-    },
-    {
-      "id": 4,
-      "title": "LocationApp",
-      "subtitle": "Trouvez votre chemin en ville et enregistrez vos endroits préférés avec cette application de localisation.",
-      "imageUrl": "https://i.imgur.com/CuUZrSc.png"
+      "imageUrl": "https://i.imgur.com/fMXO9Oz.png",
+      "videoUrl": "/assets/GiftEaseVideo.mp4"
     }
   ]
 }

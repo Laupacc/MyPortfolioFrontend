@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  right: 0;
+  right: 6%;
   top: 0;
   z-index: 999;
 }
@@ -53,14 +53,13 @@
 }
 
 /* Responsive Styling */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main {
     align-items: flex-start;
     border-radius: 5%;
-    right: 0;
+    right: 4%;
     margin-right: 3%;
     margin-top: 3%;
-    /* position: absolute; */
   }
 
   .navWrapper {
@@ -83,5 +82,17 @@
   }
   .line {
     height: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    right: 6%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    right: 12%;
   }
 }

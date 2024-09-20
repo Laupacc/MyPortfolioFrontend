@@ -24,14 +24,16 @@
     "error": "Il y a eu une erreur lors de l'envoi de votre message"
   },
   "home": {
+    "topText": "Salut, je m'appelle",
+
     "title": {
-      "1": "S",
+      "1": "L",
       "2": "a",
-      "3": "l",
-      "4": "u",
-      "5": "t"
+      "3": "u",
+      "4": "r",
+      "5": "a"
     },
-    "description": "Je m'appelle Laura, je suis Développeur Web & Mobile Full-Stack JavaScript."
+    "description": "Je code des apps web et mobiles"
   },
   "resume": {
     "resume": "Mon CV"

@@ -140,7 +140,7 @@
   -moz-transform: rotateX(-90deg) translateZ(100px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 512px) {
   .main {
     min-height: auto;
     width: auto;
@@ -161,7 +161,35 @@
   .container {
     max-width: 40%;
     margin-right: 4%;
-    margin-top: 20rem;
+    margin-top: 12rem;
+  }
+  .fadeDesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 512px) and (max-width: 768px) {
+  .main {
+    min-height: auto;
+    width: auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 5rem);
+    margin-top: 10rem;
+  }
+  .stageCubeCont {
+    margin-bottom: 6rem;
+  }
+  .aboutText {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .wavy span {
+    font-size: 3rem;
+  }
+  .container {
+    max-width: 40%;
+    margin-right: 4%;
+    margin-top: 6rem;
   }
   .fadeDesktop {
     display: none;
@@ -173,8 +201,8 @@
     margin-bottom: 4rem;
   }
   .container {
-    margin-right: 4%;
-    max-width: 40%;
+    margin-right: 7%;
+    max-width: 35%;
     margin-top: 9rem;
   }
   .wavy span {

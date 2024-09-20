@@ -24,14 +24,15 @@
     "error": "There was an error submitting your message"
   },
   "home": {
+    "topText": "Hi, I'm",
     "title": {
-      "1": "H",
-      "2": "e",
-      "3": "l",
-      "4": "l",
-      "5": "o"
+      "1": "L",
+      "2": "a",
+      "3": "u",
+      "4": "r",
+      "5": "a"
     },
-    "description": "I'm Laura, Full-Stack JavaScript Web & Mobile Developer."
+    "description": "I develop web and mobile apps"
   },
   "resume": {
     "resume": "My Resume"
