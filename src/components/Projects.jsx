@@ -112,20 +112,6 @@ function Projects() {
                             loop
                             alt={project.title}
                             style={{ objectFit: "fill" }}
-                            onError={(e) => {
-                              console.error(
-                                `Error loading video: ${project.videoUrl}`,
-                                e
-                              );
-                              console.error("Error details:", {
-                                type: e.type,
-                                target: e.target,
-                                currentTarget: e.currentTarget,
-                                eventPhase: e.eventPhase,
-                                isTrusted: e.isTrusted,
-                                timeStamp: e.timeStamp,
-                              });
-                            }}
                           />
                         ) : (
                           <img
