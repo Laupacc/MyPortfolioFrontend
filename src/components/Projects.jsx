@@ -112,12 +112,26 @@ function Projects() {
                             loop
                             alt={project.title}
                             style={{ objectFit: "fill" }}
-                            onError={(e) =>
+                            onError={(e) => {
                               console.error(
                                 `Error loading video: ${project.videoUrl}`,
                                 e
-                              )
-                            }
+                              );
+                              console.error("Error details:", {
+                                type: e.type,
+                                target: e.target,
+                                currentTarget: e.currentTarget,
+                                eventPhase: e.eventPhase,
+                                isTrusted: e.isTrusted,
+                                timeStamp: e.timeStamp,
+                              });
+                              const img = document.createElement("img");
+                              img.src = project.imageUrl;
+                              img.width = e.target.width;
+                              img.height = e.target.height;
+                              img.alt = project.title;
+                              e.target.parentNode.replaceChild(img, e.target);
+                            }}
                           />
                         ) : (
                           <img
