@@ -125,12 +125,6 @@ function Projects() {
                                 isTrusted: e.isTrusted,
                                 timeStamp: e.timeStamp,
                               });
-                              const img = document.createElement("img");
-                              img.src = project.imageUrl;
-                              img.width = e.target.width;
-                              img.height = e.target.height;
-                              img.alt = project.title;
-                              e.target.parentNode.replaceChild(img, e.target);
                             }}
                           />
                         ) : (
